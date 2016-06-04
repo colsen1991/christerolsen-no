@@ -105,3 +105,53 @@ hr {
   min-width: 320px;
   margin: 0 auto;
 }
+
+#site-header {
+  background: #ff6b00;
+  padding: 1em;
+  position: relative;
+}
+
+#site-header h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+  font-family: "Poiret One", serif;
+}
+
+#site-content {
+  display: block;
+  padding: 2em;
+  background: rgba(67,67,67,0.35);
+  position: relative;
+  min-height: 3em;
+}
+
+#site-footer {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#site-footer span:first-child {
+  flex: 9;
+}
+
+#site-footer #images {
+  display: flex;
+  justify-content: flex-end;
+  flex: 11;
+}
+
+#site-footer #images a {
+  margin-right: 0.5em;
+}
+
+#site-footer #images a:last-child {
+  margin-right: 0;
+}
+
+#site-footer #images img {
+  height: 2em;
+}
