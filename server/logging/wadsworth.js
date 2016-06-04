@@ -2,8 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const serverLogFile = path.resolve(__dirname, '..', '..', 'server.log');
-const frontendLogFile = path.resolve(__dirname, '..', '..', 'frontend.log');
+const serverLogFile = path.resolve(`${__dirname}/../../server.log`);
 
 function writeFile(type, text, logFile = serverLogFile) {
   fs.appendFile(logFile, `[${type}] ${new Date().toUTCString()}: ${text}\n`, 'utf8', error => {
@@ -29,13 +28,6 @@ function logError(error) {
   console.error(`[ERROR] ${error.stack}`);
 }
 
-function logFrontendError(error) {
-  writeFile('ERROR', JSON.stringify(error), frontendLogFile);
-
-  console.error(`[FRONTEND ERROR] ${error.stack}`);
-}
-
 exports.logInfo = logInfo;
 exports.logWarning = logWarning;
 exports.logError = logError;
-exports.logFrontendError = logFrontendError;

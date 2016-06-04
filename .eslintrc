@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb",
+  "extends": "airbnb-base",
   "rules": {
     "strict": 0,
     "curly": 0,
@@ -12,9 +12,5 @@
     "no-underscore-dangle": 0,
     "no-confusing-arrow": 0,
     "new-cap": 0,
-    "react/prop-types": 0,
-    "react/jsx-space-before-closing": 0,
-    "react/prefer-stateless-function": 0,
-    "react/no-multi-comp": 0
   }
 }
