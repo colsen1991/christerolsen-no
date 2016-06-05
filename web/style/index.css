@@ -109,7 +109,6 @@ hr {
 #site-header {
   background: #ff6b00;
   padding: 1em;
-  position: relative;
 }
 
 #site-header h1 {
@@ -123,7 +122,6 @@ hr {
   display: block;
   padding: 2em;
   background: rgba(67,67,67,0.35);
-  position: relative;
   min-height: 3em;
 }
 
@@ -154,4 +152,24 @@ hr {
 
 #site-footer #images img {
   height: 2em;
+}
+
+.transition-all-1s-ease-in-out {
+  transition: all 1s ease-in-out;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.transform-translate-y-minus-100 {
+  transform: translateY(-100px);
+}
+
+.transform-translate-x-800 {
+  transform: translatex(800px);
+}
+
+.transform-translate-x-minus-800 {
+  transform: translatex(-800px);
 }
