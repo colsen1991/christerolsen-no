@@ -1,3 +1,16 @@
+function contains(string, check) {
+  return string.indexOf(check) >= 0;
+}
+
+function showHideSiteMenu() { // eslint-disable-line no-unused-vars
+  const siteMenu = document.getElementById('site-menu');
+
+  if (contains(siteMenu.className, 'hide'))
+    siteMenu.className = 'show';
+  else
+    siteMenu.className = 'hide';
+}
+
 function bootstrap() { // eslint-disable-line no-unused-vars
   window.onerror = () => {
     window.location = '/error';
