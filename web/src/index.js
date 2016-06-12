@@ -5,10 +5,19 @@ function contains(string, check) {
 function showHideSiteMenu() { // eslint-disable-line no-unused-vars
   const siteMenu = document.getElementById('site-menu');
 
-  if (contains(siteMenu.className, 'hide'))
+  if (contains(siteMenu.className, 'hide')) {
     siteMenu.className = 'show';
-  else
+
+    Array.prototype.slice.call(document.querySelectorAll('#site-menu a')).forEach(el => {
+      el.removeAttribute('tabindex');
+    });
+  } else {
     siteMenu.className = 'hide';
+
+    Array.prototype.slice.call(document.querySelectorAll('#site-menu a')).forEach(el => {
+      el.setAttribute('tabindex', '-1');
+    });
+  }
 }
 
 function bootstrap() { // eslint-disable-line no-unused-vars
@@ -32,16 +41,12 @@ function bootstrap() { // eslint-disable-line no-unused-vars
 
 
   setTimeout(() => {
-    [
-      'opacity-0',
-      'transform-translate-y-minus-100',
-      'transform-translate-x-800',
-      'transform-translate-x-minus-800'
-    ].forEach(className => {
-      const els = document.getElementsByClassName(className);
-      Array.prototype.slice.call(els).forEach(el => {
-        el.classList.remove(className);
-      });
+    Array.prototype.slice.call(document.getElementsByClassName('animate-on-load')).forEach(el => {
+      el.classList.remove('animate-on-load');
+    });
+
+    Array.prototype.slice.call(document.querySelectorAll('#site-menu a')).forEach(el => {
+      el.addEventListener('click', showHideSiteMenu, false);
     });
   });
 }
