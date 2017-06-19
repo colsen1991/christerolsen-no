@@ -1,8 +1,4 @@
-node_modules/
-build/
-.idea/
-.vscode/
-*.prod.key
-*.prod.cert
-*.log
-jsconfig.json
+.DS_Store
+node_modules
+public
+.idea

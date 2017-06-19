@@ -1,0 +1,11 @@
+<extends src='views/templates/_default.html'>
+  <block name='content'>
+    <nav><a href="/">< Back</a></nav>
+    <article>
+      <header>
+        <h1>{{item.title}}</h1>
+      </header>
+      <p>{{{md(item.text)}}}</p>
+    </article>
+  </block>
+</extends>

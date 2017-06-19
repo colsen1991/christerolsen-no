@@ -1,0 +1,14 @@
+<extends src='templates/_default.html'>
+  <block name='content'>
+    <include src="includes/_header.html"></include>
+    <p>First draft of my website using spike+contentful+netlify!</p>
+
+    <if condition="contentful.blogPosts.length > 0">
+      <ul>
+        <each loop="blogPost of contentful.blogPosts">
+          <li><a href="/posts/{{blogPost.id}}">{{blogPost.title}}</a></li>
+        </each>
+      </ul>
+    </if>
+  </block>
+</extends>
