@@ -28,7 +28,8 @@
   "scripts": {
     "lint": "eslint assets/js",
     "test": "export NODE_ENV=test && ava -v",
-    "build": "export NODE_ENV=production && spike clean && spike compile -e production && rimraf public/.idea",
+    "build": "export NODE_ENV=production && spike clean && spike compile -e production",
+    "netlify": "npm i && export NODE_ENV=production && spike clean && spike compile -e production",
     "dev": "export NODE_ENV=development && spike clean && spike watch -e development"
   }
 }
