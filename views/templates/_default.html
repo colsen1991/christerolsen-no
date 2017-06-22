@@ -1,29 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <block name='meta'>
-      <meta charset='utf-8'>
-      <meta http-equiv='X-UA-Compatible' content='IE=edge, chrome=1'>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-    </block>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge, chrome=1'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <block name='title'>
-      <title>Christer Olsen</title>
-    </block>
+  <meta name="robots" content="index">
 
-    <block name='stylesheets'>
-      <link rel='stylesheet' href='/css/index.css'>
-    </block>
-  </head>
+  <link rel='author' href='/humans.txt'>
+  <link rel="me" href="https://www.christerolsen.no" type="text/html">
 
-  <body role='document'>
-    <main role='main'>
-      <block name='content'></block>
-    </main>
+  <block name="og">
+    <meta property="og:title" content="Christer Olsen">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Portfolio page for Christer Olsen - A Norwegian web developer">
+    <meta property="og:image" content="https://www.christerolsen.no/img/ogimage.png">
+    <meta property="og:url" content="https://www.christerolsen.no">
+  </block>
 
-    <block name='javascript'>
-      <script src='/js/main.js' defer></script>
-    </block>
-  </body>
+  <link rel="manifest" type="text/json" href="/manifest.json">
+  <meta name="theme-color" content="#FFF">
+  <meta name="application-name" content="Christer Olsen">
+  <meta name="description" content="Portfolio page for Christer Olsen - A Norwegian web developer">
+  <meta name="mobile-web-app-capable" content="yes">
 
+  <meta name="msapplication-config" content="/browserconfig.xml">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#FFF">
+  <meta name="apple-mobile-web-app-title" content="Christer Olsen">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#FFF">
+
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon-64x64.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <block name="title">
+    <title>Christer Olsen</title>
+  </block>
+
+  <link rel='stylesheet' href='/css/global.css'>
+  <block name="stylesheet"></block>
+</head>
+
+<body role='document'>
+<block name="navigation"></block>
+
+<block name="banner"></block>
+
+<main role='main'>
+  <block name='content'></block>
+</main>
+
+<block name="footer"></block>
+
+<script src='/js/main.js' defer></script>
+</body>
 </html>

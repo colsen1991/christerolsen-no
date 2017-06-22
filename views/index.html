@@ -1,14 +1,73 @@
 <extends src='templates/_default.html'>
-  <block name='content'>
-    <include src="includes/_header.html"></include>
-    <p>First draft of my website using spike+contentful+netlify!</p>
+  <block name="stylesheet">
+    <link rel='stylesheet' href='/css/home.css'>
+  </block>
 
-    <if condition="contentful.blogPosts.length > 0">
-      <ul>
-        <each loop="blogPost of contentful.blogPosts">
-          <li><a href="/posts/{{blogPost.id}}">{{blogPost.title}}</a></li>
-        </each>
-      </ul>
-    </if>
+  <block name="navigation">
+    <include src="includes/_navigation.html"></include>
+  </block>
+
+  <block name="banner">
+    <include src="includes/_banner.html"></include>
+  </block>
+
+  <block name='content'>
+    <section id="about">
+      <h1>About</h1>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis, sapien eu hendrerit efficitur, nisi metus iaculis neque, a
+        vulputate sapien sapien non erat. Vivamus egestas lacus purus, quis placerat ipsum facilisis vitae. Curabitur faucibus lorem ac mauris
+        consequat, nec ultricies leo lobortis. Fusce ut risus aliquam, auctor turpis et, porta ipsum. Nunc posuere orci justo, sit amet aliquam nunc
+        lacinia a. Nam eget ex lorem. Duis gravida erat libero, a dictum diam volutpat eget. Vestibulum a mauris et enim posuere efficitur eget vitae
+        arcu. Sed semper, nunc eu commodo eleifend, enim augue vehicula lacus, vel elementum nunc justo ac turpis. Proin eu congue mauris, eget
+        tincidunt metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Vestibulum
+        fermentum quam sed tortor finibus, in auctor lorem sollicitudin. Praesent gravida eu nisl vel ornare. Suspendisse varius turpis nisl, ac
+        ullamcorper nunc pharetra eu.</p>
+
+      <p>Curabitur elit ante, finibus pharetra sodales ullamcorper, pellentesque id purus. Ut mollis euismod ex, vitae viverra justo molestie vel.
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam risus urna, bibendum et nunc ut, fermentum
+        aliquam felis. Curabitur condimentum, enim eu consectetur molestie, velit tellus ultricies odio, nec condimentum erat ante id ex. Fusce vitae
+        ex a dui facilisis condimentum. Aliquam urna nisl, elementum a augue vitae, molestie dictum nisl. Praesent eget rutrum massa. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc tellus lorem, aliquam id vestibulum eget, porta quis
+        massa. Nunc eget porttitor orci. Sed id elit dolor. Ut in auctor arcu. Nam odio augue, auctor fermentum ligula sit amet, rhoncus posuere
+        purus. Quisque at mi magna. Aenean non mauris rutrum, pellentesque orci non, cursus lacus.</p>
+
+      <p>Cras consectetur risus mauris, maximus auctor augue vehicula at. In hac habitasse platea dictumst. Morbi eget mollis sem. Cras imperdiet
+        ligula eu lorem ornare, nec lobortis quam facilisis. Morbi molestie risus ligula, ac laoreet magna fermentum dapibus. Pellentesque egestas
+        sollicitudin purus, quis tincidunt turpis accumsan vitae. Aenean posuere mauris sem.</p>
+    </section>
+
+    <section id="blog">
+      <h1>Blog</h1>
+      <if condition="contentful.blogPosts.length > 0">
+        <ul>
+          <each loop="blogPost of contentful.blogPosts">
+            <li><a href="/posts/{{blogPost.id}}">{{blogPost.title}}</a></li>
+          </each>
+        </ul>
+      </if>
+    </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+
+      <form action="https://formspree.io/colsen1991@gmail.com" method="post">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Message" required=""></textarea>
+
+        <input role="button" type="submit" value="Send">
+
+        <input type="hidden" name="_next" value="/?showThanks=true#contact">
+        <input type="checkbox" placeholder="Check me if you are human" name="_gotcha" style="display:none">
+      </form>
+
+      <div id="form-thankyou" style="display:none">Thanks for your email!</div>
+    </section>
+  </block>
+
+  <block name="footer">
+    <include src="includes/_footer.html"></include>
   </block>
 </extends>
