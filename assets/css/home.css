@@ -38,6 +38,7 @@ form {
   flex-direction: column;
 }
 
+input,
 input[type=text],
 input[type=email],
 textarea {
