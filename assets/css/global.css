@@ -13,7 +13,8 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  max-width: 1080px;
+  max-width: 55vw;
+  padding: 0 5vw;
 }
 
 h1, h2, h3, h4, h5 {
@@ -21,3 +22,72 @@ h1, h2, h3, h4, h5 {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+div[role=menu] {
+  padding: 1em 5vw;
+  max-height: 2em;
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  background-color: #FFFFFF;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav[role=navigation] {
+  display: flex;
+  justify-content: space-between;
+  width: 55vw;
+  align-items: center;
+}
+
+nav[role=navigation]:first-child(a) {
+  height: 2em;
+}
+
+nav[role=navigation] > a > img[role=logo] {
+  height: 2em;
+  width: 2em;
+}
+
+@media (max-width: 800px) {
+  body {
+    max-width: 70vw;
+  }
+
+  nav[role=navigation] {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    max-width: 85vw;
+  }
+
+  nav[role=navigation] {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    max-width: 100%;
+  }
+
+  nav[role=navigation] {
+    max-width: 100%;
+  }
+}
