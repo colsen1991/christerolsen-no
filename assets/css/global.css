@@ -62,7 +62,7 @@ a:active {
 
 #site-navigation > nav > a > img {
   height: 2em;
-  width: 2em;
+  width: auto;
 }
 
 @media (max-width: 800px) {
@@ -101,6 +101,7 @@ a:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 4em;
 }
 
 #site-footer > span:first-child {
