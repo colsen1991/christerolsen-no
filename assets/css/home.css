@@ -6,15 +6,34 @@
   margin-top: 4em;
 }
 
-#site-banner > img {
-  width: auto;
+#site-banner > div {
   height: calc(100% - 9.5em);
-  align-self: center;
+  display: flex;
+  align-items: center;
 }
 
-@media (max-width: 475px) {
-  #site-banner > img {
-    width: calc(100% - 2em);
+#site-banner > div > img {
+  width: 20vw;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  #site-banner > div > img {
+    width: 30vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  #site-banner > div > img {
+    width: 40vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #site-banner > div > img {
+    width: 50vw;
     height: auto;
   }
 }
