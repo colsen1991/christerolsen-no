@@ -17,6 +17,13 @@
   overflow: hidden;
 }
 
+@media screen and (orientation: landscape) and (max-height: 600px) {
+  #site-banner > div > img {
+    height: 100%;
+    width: auto;
+  }
+}
+
 #site-banner > h1 {
   margin-bottom: 0;
 }
