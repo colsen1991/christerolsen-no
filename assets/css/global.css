@@ -112,9 +112,10 @@ a:active {
 #site-footer > span:nth-child(2) > a {
   display: inline-block;
   height: 2em;
-  margin-left: 2vw;
+  margin-left: 1vw;
 }
 
 #site-footer > span:nth-child(2) > a > img {
   height: 2em;
+  margin-top: 1vw;
 }
