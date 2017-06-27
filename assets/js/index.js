@@ -1,4 +1,1 @@
-if (window.location.search.includes('showThanks=true')) {
-  document.querySelector('#js-contact-form').style.display = 'none';
-  document.querySelector('#thank-you').style.display = 'block';
-}
+console.log('you can use ES6 here : )')
