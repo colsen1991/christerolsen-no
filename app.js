@@ -9,7 +9,7 @@ module.exports = {
   ignore: ['**/_*', '**/.*', 'readme.md', 'yarn.lock', 'package-lock.json', '**/.idea/**', 'LICENSE'],
   reshape: htmlStandards({
     parser: false,
-    locals: { },
+    locals: {},
     minify: isProduction
   }),
   postcss: cssStandards({
@@ -17,5 +17,5 @@ module.exports = {
     minify: isProduction,
     warnForDuplicates: !isProduction
   }),
-  babel: jsStandards({ modules: false })
+  babel: jsStandards({modules: false})
 }

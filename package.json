@@ -4,9 +4,6 @@
   "version": "0.0.1",
   "author": "Christer Olsen <colsen1991@gmail.com> (https://christerolsen.no)",
   "bugs": "https://github.com/colsen1991/christerolsen-no/issues",
-  "ava": {
-    "verbose": "true"
-  },
   "dependencies": {
     "reshape-standard": "^1.2.0",
     "spike": "1.3.1",
