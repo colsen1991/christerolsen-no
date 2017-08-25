@@ -1,7 +1,0 @@
-#not-found {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 4em;
-  height: calc(95vh - 12.5em);
-}
