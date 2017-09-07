@@ -6,6 +6,7 @@
   "private": true,
   "dependencies": {
     "@nuxtjs/pwa": "^0.2.1",
+    "buefy": "^0.5.2",
     "nuxt": "^1.0.0-rc8"
   },
   "scripts": {
@@ -25,6 +26,8 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-standard": "^3.0.1",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6"
   }
 }

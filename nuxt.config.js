@@ -1,8 +1,8 @@
 module.exports = {
-  /*
-  ** Build configuration
-  */
-  build: {},
+  css: [
+    { src: '@/assets/css/global.scss', lang: 'sass' },
+    { src: '@/assets/css/buefy-overrides.scss', lang: 'sass' }
+  ],
   /*
   ** Headers
   ** Common headers are already provided by @nuxtjs/pwa preset
@@ -11,7 +11,9 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#3B8070' },
+  loading: {
+    color: '#3B8070'
+  },
   /*
   ** Customize app manifest
   */
@@ -23,5 +25,14 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/pwa'
+  ],
+  build: {
+    extractCSS: true,
+    vendor: [
+      'buefy'
+    ]
+  },
+  plugins: [
+    '@/plugins/buefy'
   ]
 }
