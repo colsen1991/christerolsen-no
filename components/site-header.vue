@@ -1,8 +1,18 @@
 <template>
-  <nav class="navbar">
+  <header class="navbar">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <img src="~/assets/img/logo-full.svg" alt="Christer Olsen">
+        <img aria-label="Logo for Christer Olsen" alt="Christer Olsen" src="~/assets/img/logo-full.svg">
+      </a>
+
+      <a class="navbar-item" href="https://twitter.com/colsen1991" target="_blank">
+        <b-icon icon="twitter"></b-icon>
+      </a>
+      <a class="navbar-item" href="https://www.facebook.com/colsen1991" target="_blank">
+        <b-icon icon="facebook"></b-icon>
+      </a>
+      <a class="navbar-item" href="https://www.linkedin.com/in/christer-olsen-15845b53/" target="_blank">
+        <b-icon icon="linkedin"></b-icon>
       </a>
 
       <div
@@ -17,17 +27,29 @@
         <span></span>
         <span></span>
         <span></span>
-      </div >
+      </div>
     </div>
 
     <div class="navbar-menu" :class="{'is-active': show}">
-      <div class="navbar-start">
-        <a class="navbar-item">About</a>
-        <a class="navbar-item">Docs</a>
-        <a class="navbar-item">Blog</a>
-      </div>
+      <nav class="navbar-end">
+        <nuxt-link to="/tjenester" class="navbar-item">
+          <b-icon icon="cogs"></b-icon>&nbsp;Tjenester
+        </nuxt-link>
+        <nuxt-link to="/prosjekter" class="navbar-item">
+          <b-icon icon="folder-open"></b-icon>&nbsp;Prosjekter
+        </nuxt-link>
+        <nuxt-link to="/referanser" class="navbar-item">
+          <b-icon icon="comments"></b-icon>&nbsp;Referanser
+        </nuxt-link>
+        <nuxt-link to="/kontakt" class="navbar-item">
+          <b-icon icon="envelope"></b-icon>&nbsp;Kontakt
+        </nuxt-link>
+        <nuxt-link to="/blog" class="navbar-item">
+          <b-icon icon="file-text"></b-icon>&nbsp;Blog
+        </nuxt-link>
+      </nav>
     </div>
-  </nav>
+  </header>
 </template>
 
 <script>
