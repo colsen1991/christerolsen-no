@@ -2336,6 +2336,10 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
+font-awesome@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
+
 for-each@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/for-each/-/for-each-0.3.2.tgz#2c40450b9348e97f281322593ba96704b9abd4d4"
@@ -5679,6 +5683,10 @@ vm-browserify@0.0.4:
 vue-hot-reload-api@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.1.0.tgz#9ca58a6e0df9078554ce1708688b6578754d86de"
+
+vue-i18n@^7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-7.2.0.tgz#849d496affc3dbdfb5f6ad675b79e86448bce14e"
 
 vue-loader@^13.0.4:
   version "13.0.4"
