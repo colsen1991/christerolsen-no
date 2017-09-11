@@ -2,7 +2,15 @@
 
 /* Overrides goes between here... */
 
+/** =====GENERAL===== **/
 
+a.anchor-link {
+  color: $primary !important;
+}
+
+/** =====NAVBAR===== **/
+
+$navbar-height: 4rem;
 
 /* ... and here */
 

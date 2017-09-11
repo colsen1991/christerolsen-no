@@ -1,8 +1,8 @@
 module.exports = {
   css: [
-    { src: '~/assets/style/global.scss', lang: 'sass' },
-    { src: '~/assets/style/buefy-overrides.scss', lang: 'sass' },
-    { src: '~/assets/style/fa.scss', lang: 'sass' }
+    { src: './assets/style/global.scss', lang: 'sass' },
+    { src: './assets/style/buefy-overrides.scss', lang: 'sass' },
+    { src: './assets/style/fa.scss', lang: 'sass' }
   ],
   loading: {
     color: '#3B8070'
@@ -20,6 +20,6 @@ module.exports = {
     ]
   },
   plugins: [
-    '~/plugins/buefy'
+    './plugins/buefy'
   ]
 }
