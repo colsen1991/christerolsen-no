@@ -1,6 +1,6 @@
 # christerolsen-no
 
-> Portfolio page for Christer Olsen - A Norwegian web developer
+> Portfolio page for me - Christer Olsen - A Norwegian web developer
 
 ## Build Setup
 
