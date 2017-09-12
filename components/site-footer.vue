@@ -14,7 +14,7 @@
           </a><br>
           <a href="https://goo.gl/maps/7TtrchACE7P2" target="_blank">
             <b-icon class="icon is-hidden-mobile" icon="map"/>
-            Sandhorngt. 33A
+            Sandhorngata 33A
           </a><br>
         </address>
 
@@ -43,19 +43,18 @@
             <b-icon class="icon is-hidden-mobile" icon="cogs"/>
           </nuxt-link>
           <br>
-          <nuxt-link to="/prosjekter">Prosjekter
-            <b-icon class="icon is-hidden-mobile" icon="folder"/>
+          <nuxt-link to="/referanser-og-prosjekter">
+            Referanser og Prosjekter
+            <b-icon class="icon is-hidden-mobile" icon="folder-open"/>
           </nuxt-link>
           <br>
-          <nuxt-link to="/referanser">Referanser
-            <b-icon class="icon is-hidden-mobile" icon="comments"/>
-          </nuxt-link>
-          <br>
-          <nuxt-link to="/kontakt">Kontakt
+          <nuxt-link to="/kontakt">
+            Kontakt
             <b-icon class="icon is-hidden-mobile" icon="envelope"/>
           </nuxt-link>
           <br>
-          <nuxt-link to="/blog">Blogg
+          <nuxt-link to="/blogg">
+            Blogg
             <b-icon class="icon is-hidden-mobile" icon="file-text"/>
           </nuxt-link>
         </div>

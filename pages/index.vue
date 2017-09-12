@@ -1,9 +1,9 @@
 <template>
   <div>
-    <section id="site-banner" class="hero is-large is-info">
+    <section id="banner" class="hero is-large is-info">
       <div class="hero-body">
         <div class="container">
-          <h2 class="title"><a class="anchor-link" href="#site-banner">#</a> Alt innen web & IT</h2>
+          <h1 class="title"><a class="anchor-link" href="#banner">#</a> Alt innen web & IT</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
             libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
@@ -30,10 +30,10 @@
       </div>
     </section>
 
-    <section id="prosjekter" class="hero is-medium is-light">
+    <section id="referanser-og-prosjekter" class="hero is-medium is-light">
       <div class="hero-body">
         <div class="container">
-          <h2 class="title"><a class="anchor-link" href="#prosjekter">#</a> Tidligere prosjekter</h2>
+          <h2 class="title"><a class="anchor-link" href="#referanser-og-prosjekter">#</a> Referanser og Prosjekter</h2>
           <p>
             Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
             libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
@@ -43,23 +43,10 @@
       </div>
     </section>
 
-    <section id="referanser" class="hero is-medium  has-text-right">
+    <section id="kontakt" class="hero is-medium has-text-right">
       <div class="hero-body">
         <div class="container">
-          <h2 class="title">Referanser <a class="anchor-link" href="#referanser">#</a></h2>
-          <p>
-            Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-            libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-          </p><br>
-          <nuxt-link to="/kontakt" class="button is-primary is-large">Les flere</nuxt-link>
-        </div>
-      </div>
-    </section>
-
-    <section id="kontakt" class="hero is-medium is-light">
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="title"><a class="anchor-link" href="#kontakt">#</a> Kontaktinfo</h2>
+          <h2 class="title">Kontaktinfo <a class="anchor-link" href="#kontakt">#</a></h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
             libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
@@ -73,7 +60,7 @@
       </div>
     </section>
 
-    <section id="blogg" class="hero is-medium  has-text-right">
+    <section id="blogg" class="hero is-medium is-light">
       <div class="hero-body">
         <div class="container">
           <h2 class="title">Blogg <a class="anchor-link" href="#blogg">#</a></h2>

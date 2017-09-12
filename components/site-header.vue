@@ -4,7 +4,7 @@
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
           <img aria-label="Logo for Christer Olsen" alt="Christer Olsen"
-               src="~/assets/img/logo-full.svg">
+               src="~/assets/img/logo-full.png">
         </a>
 
         <div
@@ -24,19 +24,30 @@
 
       <div class="navbar-menu" :class="{'is-active': show}">
         <nav class="navbar-end">
-          <nuxt-link to="/tjenester" class="navbar-item">
-            <b-icon icon="cogs"></b-icon>&nbsp;TJENESTER
-          </nuxt-link>
-          <nuxt-link to="/prosjekter" class="navbar-item">
-            <b-icon icon="folder-open"></b-icon>&nbsp;PROSJEKTER
-          </nuxt-link>
-          <nuxt-link to="/referanser" class="navbar-item">
-            <b-icon icon="comments"></b-icon>&nbsp;REFERANSER
+          <div to="/tjenester" class="navbar-item has-dropdown is-hoverable">
+            <nuxt-link to="/tjenester" class="navbar-link">
+              <b-icon icon="cogs"></b-icon>&nbsp;TJENESTER
+            </nuxt-link>
+
+            <div class="navbar-dropdown">
+              <nuxt-link to="/tjenester/web" class="navbar-item">
+                Web
+              </nuxt-link>
+              <nuxt-link to="/tjenester/teknisk-hjelp" class="navbar-item">
+                Teknisk Hjelp
+              </nuxt-link>
+              <nuxt-link to="/tjenester/konsulent" class="navbar-item">
+                Konsulent
+              </nuxt-link>
+            </div>
+          </div>
+          <nuxt-link to="/referanser-og-prosjekter" class="navbar-item">
+            <b-icon icon="folder-open"></b-icon>&nbsp;REFERANSER OG PROSJEKTER
           </nuxt-link>
           <nuxt-link to="/kontakt" class="navbar-item">
             <b-icon icon="envelope"></b-icon>&nbsp;KONTAKT
           </nuxt-link>
-          <nuxt-link to="/blog" class="navbar-item">
+          <nuxt-link to="/blogg" class="navbar-item">
             <b-icon icon="file-text"></b-icon>&nbsp;BLOGG
           </nuxt-link>
         </nav>
