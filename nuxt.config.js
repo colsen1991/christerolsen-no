@@ -1,8 +1,7 @@
 module.exports = {
   css: [
     { src: './assets/style/global.scss', lang: 'sass' },
-    { src: './assets/style/buefy-overrides.scss', lang: 'sass' },
-    { src: './assets/style/fa.scss', lang: 'sass' }
+    { src: './assets/style/buefy-overrides.scss', lang: 'sass' }
   ],
   loading: {
     color: '#3B8070'
@@ -21,5 +20,11 @@ module.exports = {
   },
   plugins: [
     './plugins/buefy'
-  ]
+  ],
+  head: {
+    title: 'Christer Olsen',
+    script: [
+      { src: 'https://use.fontawesome.com/992cf8b5f9.js', type: 'text/javascript', async: true }
+    ]
+  }
 }
