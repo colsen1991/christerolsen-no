@@ -1,10 +1,10 @@
 <template>
-  <section id="banner" class="hero is-large is-info">
+  <section id="banner" class="hero is-info">
     <div class="hero-body">
       <div class="container">
         <h1 class="title"><a class="anchor-link" href="#banner">#</a> Web</h1>
         <p>
-         eqwewq Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
           libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
         </p><br>
         <p>

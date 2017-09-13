@@ -2,27 +2,28 @@
   <header class="navbar section">
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <img aria-label="Logo for Christer Olsen" alt="Christer Olsen"
-               src="~/assets/img/logo-full.png">
-        </a>
+        <nuxt-link class="navbar-item" to="/">
+          <img aria-label="Logo for Christer Olsen" alt="Christer Olsen" src="~/assets/img/logo-full.png">
+        </nuxt-link>
 
         <div
           class="navbar-burger burger"
-          :class="{'is-active': show}"
+          :class="{'is-active': showNavbarMenu}"
           @click="toggleNavbarMenu"
           @keydown.enter="toggleNavbarMenu"
-          @keydown.space="toggleNavbarMenu"
           role="button"
           tabindex="0"
-          :title="`${show ? 'Hide' : 'Show'} navigation menu`">
+          :title="`${showNavbarMenu ? 'Hide' : 'Show'} navigation menu`">
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
 
-      <div class="navbar-menu" :class="{'is-active': show}">
+      <div class="navbar-menu"
+           :class="{'is-active': showNavbarMenu}"
+           @click="hideNavbarMenu"
+           @keypress.enter="hideNavbarMenu">
         <nav class="navbar-end">
           <div to="/tjenester" class="navbar-item has-dropdown is-hoverable">
             <nuxt-link to="/tjenester" class="navbar-link">
@@ -30,15 +31,9 @@
             </nuxt-link>
 
             <div class="navbar-dropdown">
-              <nuxt-link to="/tjenester/web" class="navbar-item">
-                Web
-              </nuxt-link>
-              <nuxt-link to="/tjenester/teknisk-hjelp" class="navbar-item">
-                Teknisk Hjelp
-              </nuxt-link>
-              <nuxt-link to="/tjenester/konsulent" class="navbar-item">
-                Konsulent
-              </nuxt-link>
+              <nuxt-link to="/tjenester/web" class="navbar-item">Web</nuxt-link>
+              <nuxt-link to="/tjenester/teknisk-hjelp" class="navbar-item">Teknisk Hjelp</nuxt-link>
+              <nuxt-link to="/tjenester/konsulent" class="navbar-item">Konsulent</nuxt-link>
             </div>
           </div>
           <nuxt-link to="/referanser-og-prosjekter" class="navbar-item">
@@ -60,12 +55,16 @@
   export default {
     data () {
       return {
-        show: false
+        showNavbarMenu: false
       }
     },
     methods: {
       toggleNavbarMenu () {
-        this.show = !this.show
+        this.showNavbarMenu = !this.showNavbarMenu
+      },
+      hideNavbarMenu () {
+        this.showNavbarMenu = false
+        document.querySelector('.navbar-burger').focus()
       }
     }
   }

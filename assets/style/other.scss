@@ -1,0 +1,40 @@
+@import "~bulma/sass/utilities/_all";
+
+/* Customization goes between here... */
+
+$navbar-height: 4rem;
+
+/* ... and here */
+
+/* Additions goes between here... */
+
+.icon.inherit-font-size .fa {
+  font-size: inherit !important;
+}
+
+a.anchor-link {
+  color: $primary !important;
+}
+
+@media screen and (max-width: 768px) {
+  /* Has/is * mobile */
+}
+
+@media screen and (min-width: 769px), print {
+  /* Has/is * tablet */
+  .pad-right-6-tablet {
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  /* Has/is * desktop */
+  .pad-right-6-desktop {
+    padding-right: 1rem;
+  }
+}
+
+/* ... and here */
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
