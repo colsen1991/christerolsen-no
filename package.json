@@ -4,21 +4,28 @@
   "description": "Portfolio page for Christer Olsen - A Norwegian web developer",
   "author": "Christer Olsen <colsen1991@gmail.com> (https://www.christerolsen.no)",
   "private": true,
+  "scripts": {
+    "predev": "npm run dato",
+    "dev": "nuxt",
+    "prebuild": "npm run dato",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "pregenerate": "npm run dato",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "dato": "dato dump --token=8561235f5376d78a665f0a6cd4b2d5",
+    "postdato": "rimraf dist && mkdir dist && ncp static/data dist/data"
+  },
   "dependencies": {
     "@nuxtjs/pwa": "^0.2.1",
+    "axios": "^0.16.2",
     "buefy": "^0.5.2",
     "nuxt": "^1.0.0-rc11"
   },
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
-  },
   "devDependencies": {
     "babel-eslint": "^8.0.0",
+    "datocms-client": "^0.3.27",
     "eslint": "^4.6.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",
@@ -27,7 +34,9 @@
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
+    "ncp": "^2.0.0",
     "node-sass": "^4.5.3",
+    "rimraf": "^2.6.2",
     "sass-loader": "^6.0.6"
   }
 }

@@ -24,5 +24,23 @@ module.exports = {
   head: {
     title: 'Christer Olsen',
     script: [ { src: 'https://use.fontawesome.com/992cf8b5f9.js', type: 'text/javascript', async: true } ]
+  },
+  generate: {
+    async routes () {
+      const blogPosts = require('./static/data/blogg.json').data
+
+      return [
+        {
+          route: '/blogg/',
+          payload: blogPosts
+        },
+        ...blogPosts.map(blogPost => {
+          return {
+            route: `/blogg/${blogPost.slug}`,
+            payload: require(`./static/data/${blogPost.slug}.json`).data
+          }
+        })
+      ]
+    }
   }
 }
