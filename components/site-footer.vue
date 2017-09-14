@@ -21,7 +21,7 @@
 
         <div class="column is-one-third has-text-centered">
           <p><strong>Sosiale Medier</strong></p>
-          <div class="level">
+          <div class="level is-mobile">
             <div class="level-item">
               <a href="https://twitter.com/colsen1991" target="noopener">
                 <b-icon class="icon" icon="twitter"/>
