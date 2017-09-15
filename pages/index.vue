@@ -1,63 +1,43 @@
 <template>
   <div>
-    <section id="banner" class="hero is-info">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title"><a class="anchor-link" href="#banner">#</a> Alt innen web & IT</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-            libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-          </p><br>
-          <p>
-            Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-            libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-          </p><br>
-          <nuxt-link to="/kontakt" class="button is-primary is-large">Ta kontakt med meg</nuxt-link>
-        </div>
-      </div>
-    </section>
+    <hero-section title="Alt innen web & IT" type="info">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
+        libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
+      </p><br>
+      <p>
+        Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
+        libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
+      </p><br>
+    </hero-section>
 
-    <section id="tjenester" class="hero is-medium has-text-right">
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="title">Tjenester <a class="anchor-link" href="#tjenester">#</a></h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-            libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-          </p><br>
-          <nuxt-link to="/tjenester" class="button is-primary is-large">Les mer</nuxt-link>
-        </div>
-      </div>
-    </section>
+    <hero-section id="tjenester" title="Tjenester" size="medium">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
+        libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
+      </p><br>
+      <nuxt-link to="/tjenester" class="button is-primary is-large">Les Mer</nuxt-link>
+    </hero-section>
 
-    <section id="referanser-og-prosjekter" class="hero is-medium is-light">
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="title"><a class="anchor-link" href="#referanser-og-prosjekter">#</a> Referanser og Prosjekter</h2>
-          <p>
-            Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-            libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-          </p><br>
-          <nuxt-link to="/kontakt" class="button is-primary is-large">Les mer</nuxt-link>
-        </div>
-      </div>
-    </section>
+    <hero-section id="referanser-og-prosjekter" title="Referanser og Prosjekter" size="medium" type="light"
+                  hasTextRight>
+      <p>
+        Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
+        libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
+      </p><br>
+      <nuxt-link to="/kontakt" class="button is-primary is-large">Les Mer</nuxt-link>
+    </hero-section>
 
-    <section id="kontakt" class="hero is-medium has-text-right">
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="title">Kontaktinfo <a class="anchor-link" href="#kontakt">#</a></h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-            libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-          </p><br>
-          <p>
-            Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-            libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-          </p><br>
-          <nuxt-link to="/kontakt" class="button is-primary is-large">Ta kontakt</nuxt-link>
-        </div>
-      </div>
-    </section>
+    <hero-section id="kontakt" title="Ta Kontakt" size="medium">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
+        libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
+      </p><br>
+      <p>
+        Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
+        libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
+      </p><br>
+      <nuxt-link to="/kontakt" class="button is-primary is-large">Ta kontakt</nuxt-link>
+    </hero-section>
   </div>
 </template>

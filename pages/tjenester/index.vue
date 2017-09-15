@@ -1,67 +1,50 @@
 <template>
   <div>
-    <section id="banner" class="hero is-info">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title"><a class="anchor-link" href="#banner">#</a> Tjenester</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-            libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-          </p><br>
-          <p>
-            Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-            libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-          </p>
-        </div>
-      </div>
-    </section>
+    <hero-section title="Tjenester" type="info">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
+        libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
+      </p><br>
+      <p>
+        Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
+        libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
+      </p>
+    </hero-section>
 
-    <section id="web" class="hero is-medium has-text-right">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">Web <a class="anchor-link" href="#web">#</a></h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-            libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-          </p><br>
-          <p>
-            Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-            libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-          </p>
-        </div>
-      </div>
-    </section>
+    <hero-section id="web" title="Web" size="medium">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
+        libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
+      </p><br>
+      <p>
+        Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
+        libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
+      </p><br>
+      <nuxt-link to="/tjenester/web" class="button is-primary is-large">Les Mer</nuxt-link>
+    </hero-section>
 
-    <section id="teknisk-hjelp" class="hero is-medium is-light">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title"><a class="anchor-link" href="#teknisk-hjelp">#</a> Teknisk Hjelp</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-            libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-          </p><br>
-          <p>
-            Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-            libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-          </p>
-        </div>
-      </div>
-    </section>
+    <hero-section id="teknisk-hjelp" title="Teknisk Hjelp" type="light" size="medium" hasTextRight>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
+        libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
+      </p><br>
+      <p>
+        Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
+        libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
+      </p><br>
+      <nuxt-link to="/tjenester/teknisk-hjelp" class="button is-primary is-large">Les Mer</nuxt-link>
+    </hero-section>
 
-    <section id="konsulent" class="hero is-medium has-text-right">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">Konsulent <a class="anchor-link" href="#konsulent">#</a></h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-            libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-          </p><br>
-          <p>
-            Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
-            libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-          </p>
-        </div>
-      </div>
-    </section>
+    <hero-section id="konsulent" title="Konsulent" size="medium">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
+        libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
+      </p><br>
+      <p>
+        Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
+        libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
+      </p><br>
+      <nuxt-link to="/tjenester/konsulent" class="button is-primary is-large">Les Mer</nuxt-link>
+    </hero-section>
   </div>
 </template>

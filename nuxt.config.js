@@ -25,7 +25,8 @@ module.exports = {
     ]
   },
   plugins: [
-    './plugins/buefy'
+    './plugins/buefy',
+    './plugins/components'
   ],
   head: {
     title: 'Christer Olsen',

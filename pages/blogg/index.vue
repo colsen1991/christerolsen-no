@@ -1,14 +1,24 @@
 <template>
-  <section id="banner" class="hero is-info">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title"><a class="anchor-link" href="#banner">#</a> Blogg</h1>
-        <div v-for="blogPost in blogPosts">
-          <nuxt-link :to="`/blogg/${blogPost.slug}`">{{blogPost.title}}</nuxt-link>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div>
+    <hero-section title="Blogg" type="info">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et,
+        tincidunt at ante. Quisque semlibero, luctus id nulla quis.
+      </p>
+    </hero-section>
+    <hero-section v-for="(blogPost, index) in blogPosts"
+                  :id="blogPost.slug"
+                  :title="blogPost.title"
+                  size="medium"
+                  :hasTextRight="((index % 2) === 1)"
+                  :type="((index % 2) === 1) ? 'light' : 'white'"
+                  :key="`${blogPost.slug}`">
+      <br>
+      <blog-post-top :blogPost="blogPost"/>
+      <br>
+      <nuxt-link :to="`/blogg/${blogPost.slug}`" class="button is-primary is-large">Les Innlegget</nuxt-link>
+    </hero-section>
+  </div>
 </template>
 
 <script>

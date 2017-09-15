@@ -4,9 +4,9 @@ module.exports = (dato, root) => {
 
     dataDir.createPost('blogg.json', 'json', {
       frontmatter: blogPosts.map(blogPost => {
-        const { slug, title } = blogPost.toMap()
+        const { slug, title, image, excerpt, tags, updatedAt } = blogPost.toMap()
 
-        return { slug, title }
+        return { slug, title, image, excerpt, tags, updatedAt }
       })
     })
 

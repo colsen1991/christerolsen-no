@@ -4,6 +4,10 @@
 
 $navbar-height: 4rem;
 
+.tags.is-marginless .tag {
+  margin-bottom: 0 !important;
+}
+
 /* ... and here */
 
 /* Additions goes between here... */

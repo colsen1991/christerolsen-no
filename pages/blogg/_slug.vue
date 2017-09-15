@@ -1,12 +1,12 @@
 <template>
-  <section id="banner" class="hero is-info">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title"><a class="anchor-link" href="#banner">#</a> {{blogPost.title}}</h1>
-        <article class="content" v-html="blogPost.content"/>
-      </div>
-    </div>
-  </section>
+  <article>
+    <hero-section :title="blogPost.title" type="info"/>
+    <hero-section class="content">
+      <blog-post-top :blogPost="blogPost"></blog-post-top>
+      <br>
+      <div class="content" v-html="blogPost.content"/>
+    </hero-section>
+  </article>
 </template>
 
 <script>
