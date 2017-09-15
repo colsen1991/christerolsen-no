@@ -1,3 +1,7 @@
+const isStatic = !!process.env.STATIC
+
+const blogPosts = require('./static/data/blogg.json')
+
 module.exports = {
   css: [
     { src: './assets/style/other.scss', lang: 'sass' },
@@ -10,12 +14,14 @@ module.exports = {
     theme_color: '#3B8070'
   },
   modules: [
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/sitemap'
   ],
   build: {
     extractCSS: true,
     vendor: [
-      'buefy'
+      'buefy',
+      'whatwg-fetch'
     ]
   },
   plugins: [
@@ -27,20 +33,28 @@ module.exports = {
   },
   generate: {
     async routes () {
-      const blogPosts = require('./static/data/blogg.json').data
-
       return [
         {
           route: '/blogg/',
           payload: blogPosts
         },
-        ...blogPosts.map(blogPost => {
+        ...blogPosts.map(({ slug }) => {
           return {
-            route: `/blogg/${blogPost.slug}`,
-            payload: require(`./static/data/${blogPost.slug}.json`).data
+            route: `/blogg/${slug}`,
+            payload: require(`./static/data/${slug}.json`)
           }
         })
       ]
     }
+  },
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://www.christerolsen.no',
+    cacheTime: 1000 * 60 * 15,
+    generate: isStatic,
+    routes: [
+      ...blogPosts.map(blogPost => `/blogg/${blogPost.slug}`)
+    ]
+
   }
 }

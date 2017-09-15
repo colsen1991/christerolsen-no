@@ -20,13 +20,9 @@
         blogPosts = payload
       } else if (isClient) {
         const res = await fetch('/data/blogg.json')
-        const json = await res.json()
-
-        blogPosts = json.data
+        blogPosts = await res.json()
       } else if (isServer) {
-        const { data } = require('~/dist/data/blogg.json')
-
-        blogPosts = data
+        blogPosts = require('~/dist/data/blogg.json')
       }
 
       return { blogPosts }

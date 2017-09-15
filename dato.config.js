@@ -3,19 +3,17 @@ module.exports = (dato, root) => {
     const blogPosts = dato.blogPosts
 
     dataDir.createPost('blogg.json', 'json', {
-      frontmatter: {
-        data: blogPosts.map(blogPost => {
-          const { slug, title } = blogPost.toMap()
+      frontmatter: blogPosts.map(blogPost => {
+        const { slug, title } = blogPost.toMap()
 
-          return { slug, title }
-        })
-      }
+        return { slug, title }
+      })
     })
 
     blogPosts.forEach(blogPost => {
       dataDir.createPost(`${blogPost.slug}.json`, 'json', {
         frontmatter: {
-          data: blogPost.toMap()
+          ...blogPost.toMap()
         }
       })
     })

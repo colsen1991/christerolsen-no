@@ -3,7 +3,7 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title"><a class="anchor-link" href="#banner">#</a> {{blogPost.title}}</h1>
-        {{blogPost}}
+        <article class="content" v-html="blogPost.content"/>
       </div>
     </div>
   </section>
@@ -18,13 +18,9 @@
         blogPost = payload
       } else if (isClient) {
         const res = await fetch(`/data/${slug}.json`)
-        const json = await res.json()
-
-        blogPost = json.data
+        blogPost = await res.json()
       } else if (isServer) {
-        const { data } = require(`~/dist/data/${slug}.json`)
-
-        blogPost = data
+        blogPost = require(`~/dist/data/${slug}.json`)
       }
 
       return { blogPost }
