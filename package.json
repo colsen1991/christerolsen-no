@@ -19,7 +19,6 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^0.2.1",
-    "axios": "^0.16.2",
     "buefy": "^0.5.2",
     "nuxt": "^1.0.0-rc11",
     "whatwg-fetch": "^2.0.3"
