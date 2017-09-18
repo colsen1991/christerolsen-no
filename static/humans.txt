@@ -1,12 +1,13 @@
 /* TEAM */
 Your title: Christer Olsen.
 Location: Bodo, Norway.
-Site: https://christerolsen.no
+Site: https://christerolsen.me
+Facebook: colsen1991
 Twitter: colsen1991
 GitHub: cosen1991
 LinkedIn: christer-olsen-15845b53
 
 /* SITE */
-Last update: 2017/06/27
+Last update: 2017/09/18
 Standards: HTML5, CSS3, JavaScript.
-Software: WebStorm, git, npm, spike.
+Software: WebStorm, git, node, npm.

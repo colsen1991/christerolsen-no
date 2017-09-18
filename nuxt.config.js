@@ -8,10 +8,15 @@ module.exports = {
     { src: './assets/style/global.scss', lang: 'sass' }
   ],
   loading: {
-    color: '#3B8070'
+    color: '#23d160'
   },
   manifest: {
-    theme_color: '#3B8070'
+    name: 'Christer Olsen web & IT',
+    short_name: 'CO web & IT',
+    display: 'standalone',
+    description: 'Nettside for Christer Olsen. En frilanser innen fagfeltet web & IT.',
+    orientation: 'any',
+    theme_color: '#3273dc'
   },
   modules: [
     '@nuxtjs/pwa',
@@ -29,8 +34,27 @@ module.exports = {
     './plugins/components'
   ],
   head: {
-    title: 'Christer Olsen',
-    script: [ { src: 'https://use.fontawesome.com/992cf8b5f9.js', type: 'text/javascript', async: true } ]
+    htmlAttrs: { lang: 'no_NO' },
+    titleTemplate: '%s - Christer Olsen web & IT',
+    script: [ { src: 'https://use.fontawesome.com/992cf8b5f9.js', type: 'text/javascript', async: true } ],
+    link: [
+      { rel: 'favicon', href: '/favicon.ico' },
+      { rel: 'author', href: '/humans.txt' },
+      { rel: 'me', href: 'https://www.christerolsen.me', type: 'text/html' }
+    ],
+    meta: [
+      { name: 'title', content: 'Christer Olsen web & IT' },
+      { name: 'description', content: 'Frilanser innen fagfeltet web & IT. Hjemmesider, konsulenttjenester og tekinisk hjelp.' },
+      { name: 'theme-color', content: '#3273dc' },
+      { property: 'og:title', content: 'Christer Olsen web & IT' },
+      { property: 'og:description', content: 'Frilanser innen fagfeltet web & IT. Hjemmesider, konsulenttjenester og tekinisk hjelp.' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:image', content: 'https://www.christerolsen.no/logo-full.png' },
+      { property: 'og:locale', content: 'no_NO' },
+      { property: 'og:site_name', content: 'Christer Olsen web & IT' },
+      { name: 'msapplication-config', content: '/browserconfig.xml' },
+      { name: 'robots', content: 'noindex' }
+    ]
   },
   generate: {
     async routes () {
@@ -56,6 +80,5 @@ module.exports = {
     routes: [
       ...blogPosts.map(blogPost => `/blogg/${blogPost.slug}`)
     ]
-
   }
 }

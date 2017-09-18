@@ -26,6 +26,16 @@
   import createGetData from '../../utils/data'
 
   export default {
+    head: {
+      title: 'Blogg',
+      link: [ { rel: 'canonical', href: 'https://www.christerolsen.no/blogg' } ],
+      meta: [
+        { name: 'title', content: 'Blogg - Christer Olsen web & IT' },
+        { property: 'og:title', content: 'Blogg - Christer Olsen web & IT' }
+      ]
+    },
     asyncData: createGetData('blogg')
   }
 </script>
+
+

@@ -19,12 +19,7 @@
       <nuxt-link to="/tjenester" class="button is-primary is-large">Les Mer</nuxt-link>
     </hero-section>
 
-    <hero-section id="referanser-og-prosjekter"
-                  title="Referanser og Prosjekter"
-                  size="medium"
-                  type="light"
-                  hasTextRight
-                  to="/referanser-og-prosjekter">
+    <hero-section id="referanser-og-prosjekter" title="Referanser og Prosjekter" size="medium" type="light" hasTextRight to="/referanser-og-prosjekter">
       <p>
         Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
         libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
@@ -45,3 +40,16 @@
     </hero-section>
   </div>
 </template>
+
+<script>
+  export default {
+    head: {
+      title: 'Forsiden',
+      link: [ { rel: 'canonical', href: 'https://www.christerolsen.no' } ],
+      meta: [
+        { name: 'title', content: 'Forsiden - Christer Olsen web & IT' },
+        { property: 'og:title', content: 'Forsiden - Christer Olsen web & IT' }
+      ]
+    }
+  }
+</script>

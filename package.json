@@ -1,8 +1,8 @@
 {
   "name": "christerolsen-no",
   "version": "1.0.0",
-  "description": "Portfolio page for Christer Olsen - A Norwegian web developer",
-  "author": "Christer Olsen <colsen1991@gmail.com> (https://www.christerolsen.no)",
+  "description": "Website for me as a Norwegian freelancer in the web & IT field.",
+  "author": "Christer Olsen <colsen1991@gmail.com> (https://www.christerolsen.me)",
   "private": true,
   "scripts": {
     "predev": "npm run dato",

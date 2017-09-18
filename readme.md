@@ -1,6 +1,6 @@
 # christerolsen-no
 
-> Portfolio page for me - Christer Olsen - A Norwegian web developer
+> Website for me as a Norwegian freelancer in the web & IT field.
 
 ## Build Setup
 
