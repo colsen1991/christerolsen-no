@@ -11,7 +11,7 @@
       </p>
     </hero-section>
 
-    <hero-section id="web" title="Web" size="medium">
+    <hero-section id="web" title="Web" size="medium" to="/tjenester/web">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
         libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
@@ -23,7 +23,12 @@
       <nuxt-link to="/tjenester/web" class="button is-primary is-large">Les Mer</nuxt-link>
     </hero-section>
 
-    <hero-section id="teknisk-hjelp" title="Teknisk Hjelp" type="light" size="medium" hasTextRight>
+    <hero-section id="teknisk-hjelp"
+                  title="Teknisk Hjelp"
+                  type="light"
+                  size="medium"
+                  hasTextRight
+                  to="/tjenester/teknisk-hjelp">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
         libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
@@ -35,7 +40,7 @@
       <nuxt-link to="/tjenester/teknisk-hjelp" class="button is-primary is-large">Les Mer</nuxt-link>
     </hero-section>
 
-    <hero-section id="konsulent" title="Konsulent" size="medium">
+    <hero-section id="konsulent" title="Konsulent" size="medium" to="/tjenester/konsulent">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
         libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.

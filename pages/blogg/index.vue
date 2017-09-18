@@ -6,9 +6,10 @@
         tincidunt at ante. Quisque semlibero, luctus id nulla quis.
       </p>
     </hero-section>
-    <hero-section v-for="(blogPost, index) in blogPosts"
+    <hero-section v-for="(blogPost, index) in res"
                   :id="blogPost.slug"
                   :title="blogPost.title"
+                  :to="`/blogg/${blogPost.slug}`"
                   size="medium"
                   :hasTextRight="((index % 2) === 1)"
                   :type="((index % 2) === 1) ? 'light' : 'white'"
@@ -22,20 +23,9 @@
 </template>
 
 <script>
+  import createGetData from '../../utils/data'
+
   export default {
-    async asyncData ({ isClient, isServer, payload }) {
-      let blogPosts = {}
-
-      if (payload) {
-        blogPosts = payload
-      } else if (isClient) {
-        const res = await fetch('/data/blogg.json')
-        blogPosts = await res.json()
-      } else if (isServer) {
-        blogPosts = require('~/dist/data/blogg.json')
-      }
-
-      return { blogPosts }
-    }
+    asyncData: createGetData('blogg')
   }
 </script>

@@ -1,29 +1,18 @@
 <template>
   <article>
-    <hero-section :title="blogPost.title" type="info"/>
-    <hero-section class="content">
-      <blog-post-top :blogPost="blogPost"></blog-post-top>
+    <hero-section :title="res.title" type="info"/>
+    <hero-section>
+      <blog-post-top :blogPost="res" :link="false"/>
       <br>
-      <div class="content" v-html="blogPost.content"/>
+      <div class="content is-medium" v-html="res.content"/>
     </hero-section>
   </article>
 </template>
 
 <script>
+  import createGetData from '../../utils/data'
+
   export default {
-    async asyncData ({ isClient, isServer, payload, params: { slug } }) {
-      let blogPost = {}
-
-      if (payload) {
-        blogPost = payload
-      } else if (isClient) {
-        const res = await fetch(`/data/${slug}.json`)
-        blogPost = await res.json()
-      } else if (isServer) {
-        blogPost = require(`~/dist/data/${slug}.json`)
-      }
-
-      return { blogPost }
-    }
+    asyncData: createGetData()
   }
 </script>
