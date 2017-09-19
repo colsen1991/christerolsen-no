@@ -1,21 +1,9 @@
 <template>
   <div>
-    <SiteHeader/>
+    <site-header/>
     <main>
       <nuxt/>
     </main>
-    <SiteFooter/>
+    <site-footer/>
   </div>
 </template>
-
-<script>
-  import SiteHeader from '../components/site-header.vue'
-  import SiteFooter from '../components/site-footer.vue'
-
-  export default {
-    components: {
-      SiteHeader,
-      SiteFooter
-    }
-  }
-</script>

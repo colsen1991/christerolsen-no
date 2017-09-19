@@ -4,6 +4,10 @@
 
 $navbar-height: 4rem;
 
+.navbar-item img {
+  max-height: 2.75rem !important;
+}
+
 .tags.is-marginless .tag {
   margin-bottom: 0 !important;
 }

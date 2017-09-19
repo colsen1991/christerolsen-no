@@ -3,7 +3,7 @@
     <div class="container">
       <div class="navbar-brand">
         <nuxt-link class="navbar-item" to="/">
-          <img aria-label="Logo for Christer Olsen" alt="Christer Olsen" src="~/assets/img/logo-full.png">
+          <img aria-label="Logo for Christer Olsen web & IT" alt="Christer Olsen" src="~/assets/img/logo-full.png">
         </nuxt-link>
 
         <div
@@ -13,7 +13,7 @@
           @keydown.enter="toggleNavbarMenu"
           role="button"
           tabindex="0"
-          :title="`${showNavbarMenu ? 'Hide' : 'Show'} navigation menu`">
+          :title="`${showNavbarMenu ? 'Skjul' : 'Vis'} navigasjonsmeny`">
           <span></span>
           <span></span>
           <span></span>
@@ -25,7 +25,7 @@
            @click="hideNavbarMenu"
            @keypress.enter="hideNavbarMenu">
         <nav class="navbar-end">
-          <div to="/tjenester" class="navbar-item has-dropdown is-hoverable">
+          <div class="navbar-item has-dropdown is-hoverable">
             <nuxt-link to="/tjenester" class="navbar-link">
               <b-icon icon="cogs"></b-icon>&nbsp;TJENESTER
             </nuxt-link>
@@ -53,6 +53,7 @@
 
 <script>
   export default {
+    name: 'site-header',
     data () {
       return {
         showNavbarMenu: false
@@ -69,9 +70,3 @@
     }
   }
 </script>
-
-<style lang="scss">
-  .navbar-item img {
-    max-height: 2.75rem !important;
-  }
-</style>

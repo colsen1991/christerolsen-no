@@ -23,6 +23,11 @@ module.exports = {
     '@nuxtjs/sitemap'
   ],
   build: {
+    postcss: {
+      plugins: {
+        'postcss-custom-properties': false
+      }
+    },
     extractCSS: true,
     vendor: [
       'buefy',
@@ -52,8 +57,7 @@ module.exports = {
       { property: 'og:image', content: 'https://www.christerolsen.no/logo-full.png' },
       { property: 'og:locale', content: 'no_NO' },
       { property: 'og:site_name', content: 'Christer Olsen web & IT' },
-      { name: 'msapplication-config', content: '/browserconfig.xml' },
-      { name: 'robots', content: 'noindex' }
+      { name: 'robots', content: 'noindex' /* TODO Remove and edit static/robots.txt*/ }
     ]
   },
   generate: {
