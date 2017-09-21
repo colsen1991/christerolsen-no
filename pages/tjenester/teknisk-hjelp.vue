@@ -24,8 +24,8 @@
       title: 'Teknisk hjelp - Tjenester',
       link: [ { rel: 'canonical', href: 'https://www.christerolsen.no/tjenester/teknisk-hjelp' } ],
       meta: [
-        { name: 'title', content: 'Teknisk Hjelp - Tjenester - Christer Olsen web & IT' },
-        { property: 'og:title', content: 'Teknisk Hjelp - Tjenester - Christer Olsen web & IT' }
+        { name: 'title', content: 'Teknisk Hjelp - Tjenester - Christer Olsen Web & IT' },
+        { property: 'og:title', content: 'Teknisk Hjelp - Tjenester - Christer Olsen Web & IT' }
       ]
     }
   }

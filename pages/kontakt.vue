@@ -26,8 +26,8 @@
       title: 'Kontakt',
       link: [ { rel: 'canonical', href: 'https://www.christerolsen.no/kontakt' } ],
       meta: [
-        { name: 'title', content: 'Kontakt - Christer Olsen web & IT' },
-        { property: 'og:title', content: 'Kontakt - Christer Olsen web & IT' }
+        { name: 'title', content: 'Kontakt - Christer Olsen Web & IT' },
+        { property: 'og:title', content: 'Kontakt - Christer Olsen Web & IT' }
       ]
     }
   }

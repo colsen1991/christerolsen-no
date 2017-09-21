@@ -3,7 +3,7 @@
     <div class="container">
       <div class="navbar-brand">
         <nuxt-link class="navbar-item" to="/">
-          <img aria-label="Logo for Christer Olsen web & IT" alt="Christer Olsen" src="~/assets/img/logo-full.png">
+          <img aria-label="Logo for Christer Olsen Web & IT" alt="Christer Olsen" src="~/assets/img/logo-full.png">
         </nuxt-link>
 
         <div

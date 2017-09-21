@@ -1,7 +1,7 @@
 {
   "name": "christerolsen-no",
   "version": "1.0.0",
-  "description": "Website for me as a Norwegian freelancer in the web & IT field.",
+  "description": "Website for me as a Norwegian freelancer in the Web & IT field.",
   "author": "Christer Olsen <colsen1991@gmail.com> (https://www.christerolsen.me)",
   "private": true,
   "scripts": {
@@ -28,10 +28,10 @@
     "babel-eslint": "^8.0.0",
     "cross-env": "^5.0.5",
     "datocms-client": "^0.3.27",
-    "eslint": "^4.6.1",
+    "eslint": "^4.7.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",
-    "eslint-plugin-html": "^3.2.1",
+    "eslint-plugin-html": "^3.2.2",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",

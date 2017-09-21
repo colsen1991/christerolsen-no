@@ -1,6 +1,6 @@
 <template>
   <div>
-    <hero-section title="Alt innen web & IT" type="info">
+    <hero-section title="Alt innen Web & IT" type="info">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
         libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
@@ -47,8 +47,8 @@
       title: 'Forsiden',
       link: [ { rel: 'canonical', href: 'https://www.christerolsen.no' } ],
       meta: [
-        { name: 'title', content: 'Forsiden - Christer Olsen web & IT' },
-        { property: 'og:title', content: 'Forsiden - Christer Olsen web & IT' }
+        { name: 'title', content: 'Forsiden - Christer Olsen Web & IT' },
+        { property: 'og:title', content: 'Forsiden - Christer Olsen Web & IT' }
       ]
     }
   }

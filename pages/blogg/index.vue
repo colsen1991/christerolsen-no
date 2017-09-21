@@ -30,8 +30,8 @@
       title: 'Blogg',
       link: [ { rel: 'canonical', href: 'https://www.christerolsen.no/blogg' } ],
       meta: [
-        { name: 'title', content: 'Blogg - Christer Olsen web & IT' },
-        { property: 'og:title', content: 'Blogg - Christer Olsen web & IT' }
+        { name: 'title', content: 'Blogg - Christer Olsen Web & IT' },
+        { property: 'og:title', content: 'Blogg - Christer Olsen Web & IT' }
       ]
     },
     asyncData: createGetData('blogg')

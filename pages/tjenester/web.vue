@@ -24,8 +24,8 @@
       title: 'Web - Tjenester',
       link: [ { rel: 'canonical', href: 'https://www.christerolsen.no/tjenester/web' } ],
       meta: [
-        { name: 'title', content: 'Web - Tjenester - Christer Olsen web & IT' },
-        { property: 'og:title', content: 'Web - Tjenester - Christer Olsen web & IT' }
+        { name: 'title', content: 'Web - Tjenester - Christer Olsen Web & IT' },
+        { property: 'og:title', content: 'Web - Tjenester - Christer Olsen Web & IT' }
       ]
     }
   }

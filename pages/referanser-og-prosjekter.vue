@@ -26,8 +26,8 @@
       title: 'Referanser & prosjekter',
       link: [ { rel: 'canonical', href: 'https://www.christerolsen.no/referanser-og-prosjekter' } ],
       meta: [
-        { name: 'title', content: 'Referanser og prosjekter - Christer Olsen web & IT' },
-        { property: 'og:title', content: 'Referanser og prosjekter - Christer Olsen web & IT' }
+        { name: 'title', content: 'Referanser og prosjekter - Christer Olsen Web & IT' },
+        { property: 'og:title', content: 'Referanser og prosjekter - Christer Olsen Web & IT' }
       ]
     }
   }
