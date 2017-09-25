@@ -1,7 +1,12 @@
 @import "~bulma/sass/utilities/initial-variables.sass";
 
-$navbar-height: 4rem;
+$turquoise: hsl(171, 100%, 41%);
 $primary: $turquoise;
+
+$navbar-height: 4rem;
+
+$gap: 24px;
+$desktop: 960px + (2 * $gap);
 
 .navbar-item img {
   max-height: 2.75rem !important;
@@ -35,12 +40,15 @@ a.anchor-link {
   .pad-right-6-desktop {
     padding-right: 1rem;
   }
+
+  .container {
+    max-width: $desktop !important;
+  }
 }
 
 @media screen and (min-width: 1408px) {
   /* Has/is * fullhd */
 }
-
 
 @import "~bulma";
 @import "~buefy/src/scss/buefy";

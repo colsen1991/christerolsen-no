@@ -22,7 +22,9 @@
           </h3>
         </header>
 
-        <div :class="containsContent ? 'content is-medium' : ''">
+        <br v-if="seperateHeaderAndContent">
+
+        <div class="content is-medium">
           <slot/>
         </div>
       </div>
@@ -58,7 +60,7 @@
         type: String,
         default: ''
       },
-      containsContent: {
+      seperateHeaderAndContent: {
         type: Boolean,
         default: true
       },

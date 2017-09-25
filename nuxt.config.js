@@ -16,7 +16,7 @@ module.exports = {
     display: 'standalone',
     description: 'Nettside for Christer Olsen. En frilanser innen fagfeltet Web & IT.',
     orientation: 'any',
-    theme_color: '#3273dc',
+    theme_color: '#009f83',
     background_color: '#fff'
   },
   modules: [
@@ -26,7 +26,9 @@ module.exports = {
   build: {
     postcss: {
       plugins: {
-        'postcss-custom-properties': false
+        'postcss-custom-properties': {
+          warnings: false
+        }
       }
     },
     extractCSS: true,
@@ -37,7 +39,8 @@ module.exports = {
   },
   plugins: [
     './plugins/buefy',
-    './plugins/components'
+    './plugins/components',
+    './plugins/clipboard'
   ],
   head: {
     htmlAttrs: { lang: 'no_NO' },
@@ -51,7 +54,7 @@ module.exports = {
     meta: [
       { name: 'title', content: 'Christer Olsen Web & IT' },
       { name: 'description', content: 'Frilanser innen fagfeltet Web & IT. Hjemmesider, konsulenttjenester og tekinisk hjelp.' },
-      { name: 'theme-color', content: '#3273dc' },
+      { name: 'theme-color', content: '#009f83' },
       { property: 'og:title', content: 'Christer Olsen Web & IT' },
       { property: 'og:description', content: 'Frilanser innen fagfeltet Web & IT. Hjemmesider, konsulenttjenester og tekinisk hjelp.' },
       { property: 'og:type', content: 'website' },

@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar section">
+  <header class="navbar">
     <div class="container">
       <div class="navbar-brand">
         <nuxt-link class="navbar-item" to="/">
@@ -26,7 +26,7 @@
            @keypress.enter="hideNavbarMenu">
         <nav class="navbar-end">
           <div class="navbar-item has-dropdown is-hoverable">
-            <nuxt-link to="/tjenester" class="navbar-link">
+            <nuxt-link to="/tjenester" class="navbar-link is-primary">
               <b-icon icon="cogs"></b-icon>&nbsp;TJENESTER
             </nuxt-link>
 
@@ -36,8 +36,8 @@
               <nuxt-link to="/tjenester/konsulent" class="navbar-item">Konsulent</nuxt-link>
             </div>
           </div>
-          <nuxt-link to="/referanser-og-prosjekter" class="navbar-item">
-            <b-icon icon="folder-open"></b-icon>&nbsp;REFERANSER OG PROSJEKTER
+          <nuxt-link to="/portfolio" class="navbar-item">
+            <b-icon icon="folder-open"></b-icon>&nbsp;PORTFOLIO
           </nuxt-link>
           <nuxt-link to="/kontakt" class="navbar-item">
             <b-icon icon="envelope"></b-icon>&nbsp;KONTAKT

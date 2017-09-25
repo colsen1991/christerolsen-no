@@ -13,16 +13,23 @@
         </b-tag>
       </b-taglist>
       <time class="level-right" :datetime="blogPost.updatedAt">
-        {{new Date(blogPost.updatedAt).toDateString()}}
+        {{date}}
       </time>
     </div>
-    <div class="content is-medium" v-html="blogPost.excerpt"></div>
+    <div v-html="blogPost.excerpt"></div>
   </div>
 </template>
 
 <script>
   export default {
     name: 'blog-post-top',
+    computed: {
+      date () {
+        const date = new Date(this.blogPost.updatedAt)
+
+        return `${date.getDay()}/${date.getMonth()}/${date.getFullYear()}`
+      }
+    },
     props: {
       blogPost: {
         type: Object,

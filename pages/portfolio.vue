@@ -1,6 +1,6 @@
 <template>
   <div>
-    <hero-section id="banner" title="Referanser og prosjekter" type="info">
+    <hero-section id="banner" title="Portfolio" type="info">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
         libero.
@@ -11,7 +11,7 @@
       <p>
         Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
         libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
-      </p><br>
+      </p>
       <p>
         Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
         libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
@@ -24,7 +24,7 @@
   export default {
     head: {
       title: 'Referanser & prosjekter',
-      link: [ { rel: 'canonical', href: 'https://www.christerolsen.no/referanser-og-prosjekter' } ],
+      link: [ { rel: 'canonical', href: 'https://www.christerolsen.no/portfolio' } ],
       meta: [
         { name: 'title', content: 'Referanser og prosjekter - Christer Olsen Web & IT' },
         { property: 'og:title', content: 'Referanser og prosjekter - Christer Olsen Web & IT' }

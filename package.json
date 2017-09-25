@@ -21,14 +21,16 @@
     "@nuxtjs/pwa": "^0.2.1",
     "buefy": "^0.5.2",
     "nuxt": "^1.0.0-rc11",
+    "vue-clipboard2": "^0.0.6",
+    "vue-disqus": "^2.0.3",
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "@nuxtjs/sitemap": "^0.0.3",
     "babel-eslint": "^8.0.0",
     "cross-env": "^5.0.5",
-    "datocms-client": "^0.3.27",
-    "eslint": "^4.7.1",
+    "datocms-client": "^0.3.28",
+    "eslint": "^4.7.2",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-html": "^3.2.2",
