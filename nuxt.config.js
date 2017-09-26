@@ -49,7 +49,7 @@ module.exports = {
     titleTemplate: '%s - Christer Olsen Web & IT',
     script: [ { src: 'https://use.fontawesome.com/992cf8b5f9.js', type: 'text/javascript', async: true } ],
     link: [
-      { rel: 'favicon', href: '/favicon.ico' },
+      { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'author', href: '/humans.txt' },
       { rel: 'me', href: 'https://www.christerolsen.me', type: 'text/html' }
     ],
