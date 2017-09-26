@@ -1,51 +1,49 @@
-<template xmlns:v-clipboard="http://www.w3.org/1999/xhtml">
-  <article>
-    <hero-section :title="res.title">
+<template>
+  <article class="content is-medium">
+    <header class="container section">
       <blog-post-top :blogPost="res" :link="false"/>
-      <br>
-      <div class="content is-medium" v-html="res.content"/>
-    </hero-section>
+    </header>
 
-    <section class="container level is-mobile">
-      <span class="level-item">
-        <a v-clipboard:copy="url" v-clipboard:success="onCopy">
-          <b-icon class="icon is-primary" icon="share" slot="trigger"/>
-        </a>
-      </span>
+    <section class="container section" v-html="res.content"/>
 
-      <span class="level-item">
-        <a :href="`https://twitter.com/home?status=${urlEncoded}`" target="noopener" rel="nofollow">
-          <b-icon class="icon" icon="twitter"/>
-        </a>
-      </span>
+    <footer class="container">
+      <div class="section level is-mobile">
+        <span class="level-item">
+          <a v-clipboard:copy="url" v-clipboard:success="onCopy">
+            <b-icon class="icon is-primary" icon="share" slot="trigger"/>
+          </a>
+        </span>
 
-      <span class="level-item">
-        <a :href="`https://www.facebook.com/sharer/sharer.php?u=${urlEncoded}`" target="noopener" rel="nofollow">
-          <b-icon class="icon" icon="facebook"/>
-        </a>
-      </span>
+        <span class="level-item">
+          <a :href="`https://twitter.com/home?status=${urlEncoded}`" target="noopener" rel="nofollow">
+            <b-icon class="icon" icon="twitter"/>
+          </a>
+        </span>
 
-      <span class="level-item">
-        <a :href="`https://www.linkedin.com/shareArticle?mini=true&url=${urlEncoded}&title=${titleEncoded}`" target="noopener" rel="nofollow">
-          <b-icon class="icon" icon="linkedin"/>
-        </a>
-      </span>
-    </section>
+        <span class="level-item">
+          <a :href="`https://www.facebook.com/sharer/sharer.php?u=${urlEncoded}`" target="noopener" rel="nofollow">
+            <b-icon class="icon" icon="facebook"/>
+          </a>
+        </span>
 
-    <section class="container section">
-      <disqus shortname="christerolsen-no" :identifier="res.slug" :url="`https://www.christerolsen.no/blogg/${this.res.slug}`"/>
-    </section>
+        <span class="level-item">
+          <a :href="`https://www.linkedin.com/shareArticle?mini=true&url=${urlEncoded}&title=${titleEncoded}`" target="noopener" rel="nofollow">
+            <b-icon class="icon" icon="linkedin"/>
+          </a>
+        </span>
+      </div>
+      <div class="section has-text-centered">
+        <button v-if="!showComments" class="button is-primary is-large" @click="toggleComments">Vis kommentarfelt</button>
+        <vue-disqus v-if="showComments" shortname="christerolsen-no" :identifier="res.slug" :url="`https://www.christerolsen.no/blogg/${this.res.slug}`"/>
+      </div>
+    </footer>
   </article>
 </template>
 
 <script>
   import createGetData from '../../utils/data'
-  import VueDisqus from 'vue-disqus/VueDisqus.vue'
 
   export default {
-    components: {
-      disqus: VueDisqus
-    },
     computed: {
       url () {
         return `https://www.christerolsen.no/blogg/${this.res.slug}`
@@ -60,7 +58,13 @@
     methods: {
       onCopy () {
         this.$toast.open('URL kopiert til utklippstavle!')
+      },
+      toggleComments () {
+        this.showComments = true
       }
+    },
+    data () {
+      return { showComments: false }
     },
     head () {
       return {

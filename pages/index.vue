@@ -1,6 +1,6 @@
 <template>
   <div>
-    <hero-section title="Alt innen Web & IT" type="info" size="fullheight" class="has-text-centered">
+    <hero-section title="Alt innen Web & IT" type="info" size="medium" class="has-text-centered">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et, tincidunt at ante. Quisque sem
         libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.

@@ -1,14 +1,16 @@
 <template>
   <div>
+    <heading-1 v-if="!link" :id="blogPost.slug" :title="blogPost.title"/>
+    <heading-2 v-if="link" :id="blogPost.slug" :title="blogPost.title" :to="`/blogg/${blogPost.slug}`"/>
+
     <nuxt-link v-if="link" :to="`/blogg/${blogPost.slug}`">
       <img width="100%" :title="blogPost.image.title" :alt="blogPost.image.alt" :src="blogPost.image.url"/>
     </nuxt-link>
     <img v-if="!link" width="100%" :title="blogPost.image.title" :alt="blogPost.image.alt" :src="blogPost.image.url"/>
+
     <div class="level is-mobile">
       <b-taglist class="level-left is-marginless">
-        <b-tag v-for="tag in blogPost.tags.split(',')"
-               :key="`${blogPost.slug}-${tag}`"
-               class="is-success">
+        <b-tag v-for="tag in blogPost.tags.split(',')" :key="`${blogPost.slug}-${tag}`" class="is-success">
           {{tag}}
         </b-tag>
       </b-taglist>
@@ -16,6 +18,7 @@
         {{date}}
       </time>
     </div>
+
     <div v-html="blogPost.excerpt"></div>
   </div>
 </template>
@@ -38,7 +41,7 @@
       link: {
         type: Boolean,
         default: true
-      }
+      },
     }
   }
 </script>

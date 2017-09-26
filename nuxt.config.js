@@ -40,7 +40,8 @@ module.exports = {
   plugins: [
     './plugins/buefy',
     './plugins/components',
-    './plugins/clipboard'
+    './plugins/clipboard',
+    './plugins/disqus'
   ],
   head: {
     htmlAttrs: { lang: 'no_NO' },

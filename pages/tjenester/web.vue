@@ -6,7 +6,8 @@
         libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.
       </p>
     </hero-section>
-    <hero-section :seperateHeaderAndContent="false">
+
+    <hero-section>
       <p>
         Lorem ipsum scelerisque sit amet porta et, tincidunt at ante. Quisque sem
         libero, luctus id nulla quis, ultrices pharetra erat. Fringilla vitae velit id, sodales rhoncus est.

@@ -3,10 +3,9 @@
     <hero-section title="Blogg" type="info">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris massa lacus, scelerisque sit amet porta et.</p>
     </hero-section>
+
     <hero-section v-for="(blogPost, index) in res"
                   :id="blogPost.slug"
-                  :title="blogPost.title"
-                  :to="`/blogg/${blogPost.slug}`"
                   :hasTextRight="((index % 2) === 1)"
                   :type="((index % 2) === 1) ? 'light' : 'white'"
                   :key="`${blogPost.slug}`">

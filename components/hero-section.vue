@@ -1,32 +1,13 @@
 <template>
-  <section :id="id" class="hero" :class="[hasTextRight ? rightClass : '', sizeClass, typeClass ]">
+  <section :id="id" class="hero" :class="[hasTextRight ? 'has-text-right' : '', `is-${this.size}`, `is-${this.type}`]">
     <div class="hero-body">
-      <div class="container">
+      <div class="container" :class="hasContent ? 'content is-medium' : ''">
         <header v-if="!!title">
-          <h1 v-if="id === 'banner'" class="title">
-            <a class="anchor-link" :href="`#${id}`">#&nbsp;</a>
-            <nuxt-link v-if="!!to" :to="to">{{title}}</nuxt-link>
-            <span v-if="!to">{{title}}</span>
-          </h1>
-
-          <h2 v-if="id !== 'banner' || subtitle"
-              :class="id !== 'banner' ? 'title' : 'subtitle'">
-            <a class="anchor-link" :href="`#${id}`">#&nbsp;</a>
-            <nuxt-link v-if="!!to" :to="to">{{title}}</nuxt-link>
-            <span v-if="!to">{{id !== 'banner' ? title : subtitle}}</span>
-          </h2>
-
-          <h3 v-if="id !== 'banner' && subtitle" class="subtitle">
-            <a class="anchor-link" :href="`#${id}`">#&nbsp;</a>
-            {{subtitle}}
-          </h3>
+          <heading-1 v-if="id === 'banner'" :id="id" :title="title" :to="to"/>
+          <heading-2 v-if="id !== 'banner' || subtitle" :id="id" :title="title" :subtitle="id !== 'banner'" :to="to"/>
         </header>
 
-        <br v-if="seperateHeaderAndContent">
-
-        <div class="content is-medium">
-          <slot/>
-        </div>
+        <slot/>
       </div>
     </div>
   </section>
@@ -48,6 +29,10 @@
         type: Boolean,
         default: false
       },
+      hasContent: {
+        type: Boolean,
+        default: true
+      },
       title: {
         type: String,
         default: ''
@@ -60,21 +45,10 @@
         type: String,
         default: ''
       },
-      seperateHeaderAndContent: {
-        type: Boolean,
-        default: true
-      },
       to: {
         type: String,
         default: ''
-      }
-    },
-    data () {
-      return {
-        rightClass: 'has-text-right',
-        sizeClass: `is-${this.size}`,
-        typeClass: `is-${this.type}`
-      }
+      },
     }
   }
 </script>
