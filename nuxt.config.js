@@ -14,7 +14,7 @@ module.exports = {
     name: 'Christer Olsen Web & IT',
     short_name: 'CO Web & IT',
     display: 'standalone',
-    description: 'Nettside for Christer Olsen. En frilanser innen fagfeltet Web & IT.',
+    description: 'Nettside for Christer Olsen Web & IT.',
     orientation: 'any',
     theme_color: '#009f83',
     background_color: '#fff'
@@ -33,7 +33,7 @@ module.exports = {
     },
     extractCSS: true,
     vendor: [
-      'buefy',
+      '~/assets/img/placeholder-2-1.svg',
       'whatwg-fetch'
     ]
   },
@@ -41,7 +41,8 @@ module.exports = {
     './plugins/buefy',
     './plugins/components',
     './plugins/clipboard',
-    './plugins/disqus'
+    './plugins/disqus',
+    './plugins/lazyload'
   ],
   head: {
     htmlAttrs: { lang: 'no_NO' },
@@ -54,10 +55,10 @@ module.exports = {
     ],
     meta: [
       { name: 'title', content: 'Christer Olsen Web & IT' },
-      { name: 'description', content: 'Frilanser innen fagfeltet Web & IT. Hjemmesider, konsulenttjenester og tekinisk hjelp.' },
+      { name: 'description', content: 'Hjemmesider, konsulenttjenester og tekinisk hjelp.' },
       { name: 'theme-color', content: '#009f83' },
       { property: 'og:title', content: 'Christer Olsen Web & IT' },
-      { property: 'og:description', content: 'Frilanser innen fagfeltet Web & IT. Hjemmesider, konsulenttjenester og tekinisk hjelp.' },
+      { property: 'og:description', content: 'Hjemmesider, konsulenttjenester og tekinisk hjelp.' },
       { property: 'og:type', content: 'website' },
       { property: 'og:image', content: 'https://www.christerolsen.no/logo-full.png' },
       { property: 'og:locale', content: 'no_NO' },

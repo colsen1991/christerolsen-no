@@ -4,9 +4,9 @@
     <heading-2 v-if="link" :id="blogPost.slug" :title="blogPost.title" :to="`/blogg/${blogPost.slug}`"/>
 
     <nuxt-link v-if="link" :to="`/blogg/${blogPost.slug}`">
-      <img width="100%" :title="blogPost.image.title" :alt="blogPost.image.alt" :src="blogPost.image.url"/>
+      <img v-lazy="blogPost.image.url" width="100%" :title="blogPost.image.title" :alt="blogPost.image.alt"/>
     </nuxt-link>
-    <img v-if="!link" width="100%" :title="blogPost.image.title" :alt="blogPost.image.alt" :src="blogPost.image.url"/>
+    <img v-if="!link" width="100%" v-lazy="blogPost.image.url" :title="blogPost.image.title" :alt="blogPost.image.alt"/>
 
     <div class="level is-mobile">
       <b-taglist class="level-left is-marginless">
@@ -41,7 +41,7 @@
       link: {
         type: Boolean,
         default: true
-      },
+      }
     }
   }
 </script>

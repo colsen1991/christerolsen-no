@@ -48,7 +48,7 @@
       to: {
         type: String,
         default: ''
-      },
+      }
     }
   }
 </script>

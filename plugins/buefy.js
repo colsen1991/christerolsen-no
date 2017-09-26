@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import Buefy, { Toast } from 'buefy'
 
-Buefy.Icon.props.pack = { type: String, default: 'fa' }
+const { Icon, Taglist, Tag } = Buefy
 
-Vue.component(Buefy.Icon.name, Buefy.Icon)
-Vue.component(Buefy.Taglist.name, Buefy.Taglist)
-Vue.component(Buefy.Tag.name, Buefy.Tag)
+Icon.props.pack = { type: String, default: 'fa' }
+
+Vue.component(Icon.name, Icon)
+Vue.component(Taglist.name, Taglist)
+Vue.component(Tag.name, Tag)
 
 Vue.prototype.$toast = Toast
