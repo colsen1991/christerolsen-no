@@ -30,7 +30,7 @@
       date () {
         const date = new Date(this.blogPost.updatedAt)
 
-        return `${date.getDay()}/${date.getMonth()}/${date.getFullYear()}`
+        return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
       }
     },
     props: {

@@ -47,7 +47,7 @@
 
         <hr class="is-hidden-tablet">
 
-        <div class="column is-one-third has-text-right-tablet has-text-centered-mobile">
+        <nav class="column is-one-third has-text-right-tablet has-text-centered-mobile">
           <p><strong>Navigasjon</strong></p>
           <nuxt-link to="/">HJEM</nuxt-link>
           <br>
@@ -65,7 +65,7 @@
           <nuxt-link to="/kontakt">KONTAKT</nuxt-link>
           <br>
           <nuxt-link to="/blogg">BLOGG</nuxt-link>
-        </div>
+        </nav>
       </div>
 
       <hr class="is-hidden-tablet">
