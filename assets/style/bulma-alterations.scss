@@ -1,0 +1,54 @@
+@import "~bulma/sass/utilities/initial-variables.sass";
+
+$turquoise: hsl(171, 100%, 41%);
+$primary: $turquoise;
+
+$navbar-height: 4rem;
+
+$gap: 24px;
+$desktop: 960px + (2 * $gap);
+
+.navbar-item img {
+  max-height: 2.75rem !important;
+}
+
+.tags.is-marginless .tag {
+  margin-bottom: 0 !important;
+}
+
+.icon.inherit-font-size .fa {
+  font-size: inherit !important;
+}
+
+a.anchor-link {
+  color: $primary !important;
+}
+
+@media screen and (max-width: 768px) {
+  /* Has/is * mobile */
+}
+
+@media screen and (min-width: 769px), print {
+  /* Has/is * tablet */
+  .pad-right-6-tablet {
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  /* Has/is * desktop */
+  .pad-right-6-desktop {
+    padding-right: 1rem;
+  }
+
+  .container {
+    max-width: $desktop !important;
+  }
+}
+
+@media screen and (min-width: 1408px) {
+  /* Has/is * fullhd */
+}
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";

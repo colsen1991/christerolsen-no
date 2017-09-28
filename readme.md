@@ -1,16 +1,23 @@
-# christerolsen.no
+# christerolsen-no
 
-Homepage for myself
+> Website for me as a Norwegian freelancer in the Web & IT field.
 
-## Setup
+## Build Setup
 
-- make sure [node.js](http://nodejs.org) is at version >= `8`
-- `npm i spike -g`
-- clone this repo down and `cd` into the folder
-- run `yarn` or `npm install`
-- run `npm start` or `npm num build`
+``` bash
+# install dependencies
+$ npm install # Or yarn install
 
-## Testing
-Tests are located in `test/**` and are powered by [ava](https://github.com/sindresorhus/ava)
-- `yarn` or `npm install` to ensure devDeps are installed
-- `npm test` to run test suite
+# serve with hot reload at localhost:3000
+# service worker is disabled in dev
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
