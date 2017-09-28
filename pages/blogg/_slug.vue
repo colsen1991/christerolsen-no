@@ -15,19 +15,19 @@
         </span>
 
         <span class="level-item">
-          <a :href="`https://twitter.com/home?status=${urlEncoded}`" target="noopener" rel="nofollow">
+          <a :href="`https://twitter.com/home?status=${urlEncoded}`" target="_blank" rel="noopener nofollow">
             <b-icon class="icon" icon="twitter"/>
           </a>
         </span>
 
         <span class="level-item">
-          <a :href="`https://www.facebook.com/sharer/sharer.php?u=${urlEncoded}`" target="noopener" rel="nofollow">
+          <a :href="`https://www.facebook.com/sharer/sharer.php?u=${urlEncoded}`" target="_blank" rel="noopener nofollow">
             <b-icon class="icon" icon="facebook"/>
           </a>
         </span>
 
         <span class="level-item">
-          <a :href="`https://www.linkedin.com/shareArticle?mini=true&url=${urlEncoded}&title=${titleEncoded}`" target="noopener" rel="nofollow">
+          <a :href="`https://www.linkedin.com/shareArticle?mini=true&url=${urlEncoded}&title=${titleEncoded}`" target="_blank" rel="noopener nofollow">
             <b-icon class="icon" icon="linkedin"/>
           </a>
         </span>

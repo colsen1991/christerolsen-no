@@ -4,7 +4,7 @@
       <div class="columns">
         <address class="column is-one-third has-text-centered-mobile">
           <p><strong>Kontaktinformasjon</strong></p>
-          <a href="https://goo.gl/maps/7TtrchACE7P2" target="noopener" rel="nofollow">
+          <a href="https://goo.gl/maps/7TtrchACE7P2" target="_blank" rel="noopener nofollow">
             SANDHORNGT. 33A 8008 BODØ
           </a>
           <br>
@@ -23,22 +23,22 @@
           <p><strong>Sosiale Medier</strong></p>
           <div class="level is-mobile">
             <span class="level-item">
-              <a href="https://twitter.com/colsen1991" target="noopener" rel="nofollow">
+              <a href="https://twitter.com/colsen1991" target="_blank" rel="noopener nofollow">
                 <b-icon class="icon" icon="twitter"/>
               </a>
             </span>
             <span class="level-item">
-              <a href="https://www.facebook.com/colsen1991" target="noopener" rel="nofollow">
+              <a href="https://www.facebook.com/colsen1991" target="_blank" rel="noopener nofollow">
                 <b-icon class="icon" icon="facebook"/>
               </a>
             </span>
             <span class="level-item">
-              <a href="https://www.linkedin.com/in/christer-olsen-15845b53/" target="noopener" rel="nofollow">
+              <a href="https://www.linkedin.com/in/christer-olsen-15845b53/" target="_blank" rel="noopener nofollow">
                 <b-icon class="icon" icon="linkedin"/>
               </a>
             </span>
             <span class="level-item">
-              <a href="https://github.com/colsen1991" target="noopener" rel="nofollow">
+              <a href="https://github.com/colsen1991" target="_blank" rel="noopener nofollow">
                 <b-icon class="icon" icon="github"/>
               </a>
             </span>
@@ -72,7 +72,7 @@
 
       <p class="has-text-centered">&copy; {{new Date().getFullYear()}} CHRISTER OLSEN</p>
       <p class="has-text-centered">ORGNR: <a href="https://w2.brreg.no/enhet/sok/detalj.jsp?orgnr=991991991"
-                                             target="noopener" rel="nofollow">991 991 991</a></p>
+                                             target="_blank" rel="noopener nofollow">991 991 991</a></p>
       <p class="has-text-centered"><a class="has-text-grey" href="/sitemap.xml">SITEMAP</a></p>
     </div>
   </footer>

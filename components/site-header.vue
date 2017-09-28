@@ -26,7 +26,7 @@
            @keypress.enter="hideNavbarMenu">
         <nav class="navbar-end">
           <div class="navbar-item has-dropdown is-hoverable">
-            <nuxt-link to="/tjenester" class="navbar-link is-primary">
+            <nuxt-link to="/tjenester" class="navbar-link">
               <b-icon icon="cogs"></b-icon>&nbsp;TJENESTER
             </nuxt-link>
 
