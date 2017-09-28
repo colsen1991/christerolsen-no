@@ -69,13 +69,14 @@
     head () {
       return {
         title: `${this.res.title} - Blogg`,
-        link: [ { rel: 'canonical', href: `https://www.christerolsen.no/blogg/${this.res.slug}` } ],
+        link: [ { hid: 'canonical', rel: 'canonical', href: `https://www.christerolsen.no/blogg/${this.res.slug}` } ],
         meta: [
-          { name: 'title', content: `${this.res.title} - Blogg - Christer Olsen Web & IT` },
-          { property: 'og:title', content: `${this.res.title} - Blogg - Christer Olsen Web & IT` },
-          { property: 'og:description', content: this.res.excerpt },
-          { property: 'og:image', content: this.res.image.url },
-          { property: 'og:type', content: 'article' }
+          { hid: 'title', property: 'title', content: this.res.title },
+          { hid: 'description', name: 'description', content: this.res.excerpt },
+          { hid: 'og:title', property: 'og:title', content: this.res.title },
+          { hid: 'og:description', property: 'og:description', content: this.res.excerpt },
+          { hid: 'og:image', property: 'og:image', content: this.res.image.url },
+          { hid: 'og:type', property: 'og:type', content: 'article' }
         ]
       }
     },

@@ -20,10 +20,9 @@
   export default {
     head: {
       title: 'Blogg',
-      link: [ { rel: 'canonical', href: 'https://www.christerolsen.no/blogg' } ],
+      link: [ { hid: 'canonical', rel: 'canonical', href: 'https://www.christerolsen.no/blogg' } ],
       meta: [
-        { name: 'title', content: 'Blogg - Christer Olsen Web & IT' },
-        { property: 'og:title', content: 'Blogg - Christer Olsen Web & IT' }
+        { hid: 'og:title', property: 'og:title', content: 'Blogg - Christer Olsen Web & IT' }
       ]
     },
     asyncData: createGetData('blogg')

@@ -46,7 +46,7 @@ module.exports = {
     './plugins/lazyload'
   ],
   head: {
-    htmlAttrs: { lang: 'no_NO' },
+    htmlAttrs: { lang: 'no' },
     titleTemplate: '%s - Christer Olsen Web & IT',
     script: [ { src: 'https://use.fontawesome.com/992cf8b5f9.js', type: 'text/javascript', async: true } ],
     link: [
@@ -55,14 +55,13 @@ module.exports = {
       { rel: 'me', href: 'https://www.christerolsen.me', type: 'text/html' }
     ],
     meta: [
-      { name: 'title', content: 'Christer Olsen Web & IT' },
-      { name: 'description', content: 'Hjemmesider, konsulenttjenester og tekinisk hjelp.' },
+      { hid: 'description', name: 'description', content: 'Hjemmesider, konsulenttjenester og tekinisk hjelp.' },
       { name: 'theme-color', content: '#009f83' },
-      { property: 'og:title', content: 'Christer Olsen Web & IT' },
-      { property: 'og:description', content: 'Hjemmesider, konsulenttjenester og tekinisk hjelp.' },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:image', content: 'https://www.christerolsen.no/logo-full.png' },
-      { property: 'og:locale', content: 'no_NO' },
+      { hid: 'og:title', property: 'og:title', content: 'Christer Olsen Web & IT' },
+      { hid: 'og:description', property: 'og:description', content: 'Hjemmesider, konsulenttjenester og tekinisk hjelp.' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:image', property: 'og:image', content: 'https://www.christerolsen.no/logo-full.png' },
+      { property: 'og:locale', content: 'no' },
       { property: 'og:site_name', content: 'Christer Olsen Web & IT' },
       { name: 'robots', content: 'index, follow' }
     ]

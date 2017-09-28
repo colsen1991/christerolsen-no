@@ -53,10 +53,9 @@
   export default {
     head: {
       title: 'Tjenester',
-      link: [ { rel: 'canonical', href: 'https://www.christerolsen.no/tjenester' } ],
+      link: [ { hid: 'canonical', rel: 'canonical', href: 'https://www.christerolsen.no/tjenester' } ],
       meta: [
-        { name: 'title', content: 'Tjenester - Christer Olsen Web & IT' },
-        { property: 'og:title', content: 'Tjenester - Christer Olsen Web & IT' }
+        { hid: 'og:title', property: 'og:title', content: 'Tjenester - Christer Olsen Web & IT' }
       ]
     }
   }

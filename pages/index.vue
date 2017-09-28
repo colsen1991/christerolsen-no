@@ -27,10 +27,9 @@
   export default {
     head: {
       title: 'Forsiden',
-      link: [ { rel: 'canonical', href: 'https://www.christerolsen.no' } ],
+      link: [ { hid: 'canonical', rel: 'canonical', href: 'https://www.christerolsen.no' } ],
       meta: [
-        { name: 'title', content: 'Forsiden - Christer Olsen Web & IT' },
-        { property: 'og:title', content: 'Forsiden - Christer Olsen Web & IT' }
+        { hid: 'og:title', property: 'og:title', content: 'Forsiden - Christer Olsen Web & IT' }
       ]
     }
   }

@@ -27,10 +27,9 @@
   export default {
     head: {
       title: 'Konsulent - Tjenester',
-      link: [ { rel: 'canonical', href: 'https://www.christerolsen.no/tjenester/konsulent' } ],
+      link: [ { hid: 'canonical', rel: 'canonical', href: 'https://www.christerolsen.no/tjenester/konsulent' } ],
       meta: [
-        { name: 'title', content: 'Konsulent - Tjenester - Christer Olsen Web & IT' },
-        { property: 'og:title', content: 'Konsulent - Tjenester - Christer Olsen Web & IT' }
+        { hid: 'og:title', property: 'og:title', content: 'Konsulent - Tjenester - Christer Olsen Web & IT' }
       ]
     }
   }

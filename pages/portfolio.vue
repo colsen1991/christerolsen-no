@@ -23,11 +23,10 @@
 <script>
   export default {
     head: {
-      title: 'Referanser & prosjekter',
-      link: [ { rel: 'canonical', href: 'https://www.christerolsen.no/portfolio' } ],
+      title: 'Portfolio',
+      link: [ { hid: 'canonical', rel: 'canonical', href: 'https://www.christerolsen.no/portfolio' } ],
       meta: [
-        { name: 'title', content: 'Referanser og prosjekter - Christer Olsen Web & IT' },
-        { property: 'og:title', content: 'Referanser og prosjekter - Christer Olsen Web & IT' }
+        { hid: 'og:title', property: 'og:title', content: 'Portfolio - Christer Olsen Web & IT' }
       ]
     }
   }

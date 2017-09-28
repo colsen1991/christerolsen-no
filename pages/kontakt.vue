@@ -24,10 +24,9 @@
   export default {
     head: {
       title: 'Kontakt',
-      link: [ { rel: 'canonical', href: 'https://www.christerolsen.no/kontakt' } ],
+      link: [ { hid: 'canonical', rel: 'canonical', href: 'https://www.christerolsen.no/kontakt' } ],
       meta: [
-        { name: 'title', content: 'Kontakt - Christer Olsen Web & IT' },
-        { property: 'og:title', content: 'Kontakt - Christer Olsen Web & IT' }
+        { hid: 'og:title', property: 'og:title', content: 'Kontakt - Christer Olsen Web & IT' }
       ]
     }
   }
