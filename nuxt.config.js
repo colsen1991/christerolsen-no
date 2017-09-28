@@ -70,7 +70,7 @@ module.exports = {
     async routes () {
       return [
         {
-          route: '/blogg/',
+          route: '/blogg',
           payload: blogPosts
         },
         ...blogPosts.map(({ slug }) => {
