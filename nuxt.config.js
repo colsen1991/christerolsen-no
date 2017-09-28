@@ -64,7 +64,7 @@ module.exports = {
       { property: 'og:image', content: 'https://www.christerolsen.no/logo-full.png' },
       { property: 'og:locale', content: 'no_NO' },
       { property: 'og:site_name', content: 'Christer Olsen Web & IT' },
-      { name: 'robots', content: 'noindex' }
+      { name: 'robots', content: 'index, follow' }
     ]
   },
   generate: {
