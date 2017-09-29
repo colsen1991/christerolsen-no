@@ -1,6 +1,6 @@
 # christerolsen-no
 
-> Website for me as a Norwegian freelancer in the Web & IT field.
+> Homepage for my business to-be 
 
 ## Build Setup
 
