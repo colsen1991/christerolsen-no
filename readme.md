@@ -1,4 +1,4 @@
-# christerolsen-no
+# vindir-no
 
 > Homepage for my business to-be 
 
