@@ -1,6 +1,6 @@
 # vindir-no
 
-> Homepage for my business to-be 
+> Homepage for my business (https://www.vindir.no)
 
 ## Build Setup
 
