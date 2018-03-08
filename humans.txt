@@ -1,0 +1,13 @@
+/* TEAM */
+Your title: Christer Olsen
+Location: Bodo, Norway
+Site: https://christerolsen.me
+Twitter: colsen1991
+GitHub: colsen1991
+Facebook: colsen1991
+LinkedIn: colsen1991
+
+/* SITE */
+Last update: 2018/03/08
+Standards: HTML, HTML5, CSS, CSS3, JavaScript
+Software: WebStorm
