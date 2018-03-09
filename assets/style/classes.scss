@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) {
+  /* Has/is * mobile */
+}
+
+@media screen and (min-width: 769px) {
+  /* Has/is * tablet */
+}
+
+@media screen and (min-width: 1008px) {
+  /* Has/is * desktop */
+}
+
+@media screen and (min-width: 1408px) {
+  /* Has/is * fullhd */
+  .image.is-max-256x256-fullhd {
+    max-width: 256px !important;
+    max-height: 256px !important;
+  }
+}

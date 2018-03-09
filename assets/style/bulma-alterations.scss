@@ -1,0 +1,40 @@
+@import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "../../node_modules/bulma/sass/utilities/functions.sass";
+
+$black: #0F0F0F;
+$white-ter: #F5F5F5;
+$grey-darker: #073A39;
+$tourquoise: #00D19C;
+$orange: #FF851C;
+$blue: #006584;
+$cyan: #0CF2F2;
+$purple: #442E60;
+$green: #23D260;
+$yellow: #FFDE57;
+$red: #D81E2D;
+
+$link: $orange;
+$link-invert: findColorInvert($orange);
+
+$info: $blue;
+$info-invert: findColorInvert($blue);
+
+$family-sans-serif: 'Montserrat', sans-serif;
+
+@media screen and (max-width: 768px) {
+  /* Has/is * mobile */
+}
+
+@media screen and (min-width: 769px), print {
+  /* Has/is * tablet */
+}
+
+@media screen and (min-width: 1008px) {
+  /* Has/is * desktop */
+}
+
+@media screen and (min-width: 1408px) {
+  /* Has/is * fullhd */
+}
+
+@import "../../node_modules/bulma/bulma.sass";

@@ -1,0 +1,43 @@
+{
+  "name": "vindir",
+  "version": "1.0.0",
+  "description": "Hjemmeside for vVindir (https://www.vindir.no).",
+  "author": "Christer Olsen <colsen1991@gmail.com>(https://www.christerolsen.me)))  (https://www.christerolsen.me)",
+  "private": true,
+  "scripts": {
+    "_predev": "npm run dato",
+    "dev": "nuxt",
+    "_prebuild": "npm run dato",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "_pregenerate": "npm run dato",
+    "generate": "cd .",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "dato": "dato dump --token=TODO:CHANGEME"
+  },
+  "dependencies": {
+    "@nuxtjs/google-analytics": "^2.0.2",
+    "@nuxtjs/pwa": "^2.0.5",
+    "@nuxtjs/sitemap": "^0.0.3",
+    "bulma": "^0.6.2",
+    "nuxt": "^1.4.0",
+    "vue-lazyload": "^1.2.1",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "cross-env": "^5.1.3",
+    "datocms-client": "^0.3.44",
+    "eslint": "^4.18.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^4.0.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6"
+  }
+}
